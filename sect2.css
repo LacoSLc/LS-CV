@@ -1,0 +1,129 @@
+.sec2{
+    width: 100%;
+    /* min-width: 200px; */
+    min-height: 100vh;
+    background-color: rgb(28, 28, 28);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container2{
+    display: flex;
+    gap: 50px; 
+    /* min-width: 400px; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    animation: none;
+    margin:  20px 0;
+
+}
+
+.vzdelanie, .skusenosti, .jazyk{
+    width: 40vw;
+    max-width: 1000px;
+    min-width: 350px;
+    border: solid 1px rgb(0, 210, 154);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 0 20px 20px 20px;
+    background-color: #292929;
+}
+.vzdelanie{
+    margin-bottom: 10%;
+}
+.container2 h1{
+    background-color: rgb(0, 210, 154);
+    color: black;
+    display: inline-block;
+    padding: 2px 5px;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.sec2 h2{
+    margin-bottom: 3px;
+    color: white;
+    text-decoration: underline;
+}
+
+/* SCALE BLUR EFFECT */
+
+/* .skusenosti, .vzdelanie, .jazyk{
+    transition: .3s ease-out;
+}
+
+.container2:hover .vzdelanie{
+    filter: blur(5px);
+    scale: 0.95;
+}
+.container2:hover .skusenosti{
+    filter: blur(5px);
+    scale: 0.95;
+}
+.container2:hover .jazyk{
+    filter: blur(5px);
+    scale: 0.95;
+}
+.container2:hover .skusenosti:hover{
+    scale: 1.05;
+    filter: blur(0px);
+    box-shadow: 0 0 10px aquamarine,
+                0 0 20px rgb(160, 255, 241);
+}
+.container2:hover .vzdelanie:hover{
+    scale: 1.05;
+    filter: blur(0px);
+    box-shadow: 0 0 10px aquamarine,
+                0 0 20px rgb(160, 255, 241);
+}
+
+.container2:hover .jazyk:hover{
+    scale: 1.05;
+    filter: blur(0px);
+    box-shadow: 0 0 10px aquamarine,
+                0 0 20px rgb(160, 255, 241);
+
+} */
+
+/* Scroll effect */
+
+.sec2 .skusenosti{
+    transition: .7s;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.sec2.show-animate .skusenosti{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.sec2 .vzdelanie {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: .7s;
+}
+
+.sec2.show-animate .vzdelanie{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.sec2 .jazyk {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: .7s;
+}
+
+.sec2.show-animate .jazyk{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
