@@ -1,0 +1,302 @@
+.sec1{
+    width: 100%;
+    /* min-height: 700px; */
+    min-height: 100vh;
+    background-color: rgb(28, 28, 28);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+.sec1 header{
+    background-color: rgba(10, 10, 10, 0);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.navi{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.logo{
+    color: rgb(255, 255, 255); 
+    margin-left: 35px;
+    animation: slide .6s both;
+    animation-delay: .1s;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.navi a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 0 5px;
+    margin-bottom: 30px;
+    transition: .4s all;
+}
+
+a:hover{
+    color: rgb(0, 210, 154);
+    cursor: pointer;
+}
+
+.a1{
+    animation: slide .6s both;
+    animation-delay: .25s;
+}
+
+.a2{
+    animation: slide .6s both;
+    animation-delay: .35s;
+
+}
+.a3{
+    animation: slide .6s both;
+    animation-delay: .45s;
+ }
+
+ .a4{
+    animation: slide .6s both;
+    animation-delay: .55s;
+ }
+
+@keyframes slide{
+    from {transform: translatey(-200px); opacity: 0;}
+    to {transform: translatey(0px);}
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    animation: slide .6s both;
+    animation-delay: .2s;
+}
+
+/* MAIN */
+/* UDAJE */
+
+.sec1 main{
+    min-height: 90vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.udaje{
+    min-width: 430px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 12vh;
+}
+
+.meno{
+    color: rgb(21, 21, 21);
+    font-size: 30px;
+    background-color: rgb(0, 210, 154);
+    border-radius: 10px;
+    font-weight: bold;
+    padding:0 10px;
+    display: inline-block;
+    animation: slide2 .7s both;
+    animation-delay: 1s;
+}
+
+.adresa, .mail, .tel{
+    padding-left: 10px;
+}
+
+.adresa{
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+    animation: slide2 .6s both;
+    animation-delay: 1.2s; 
+}
+
+.mail{
+    color: white;
+    margin-top: 20px;
+    font-size: 23px; 
+    animation: slide2 .6s both;
+    animation-delay: 1.4s; 
+}
+
+.tel{
+    color: white;
+    margin-top:20px;
+    font-size: 30px;
+    animation: slide2 .6s both;
+    animation-delay: 1.6s; 
+}
+
+@keyframes slide2{
+    from {transform: translatex(-200px); opacity: 0;}
+    to {transform: translatex(0px);}
+}
+
+/* ICO DIC */
+
+.ico{
+    /* width: 140px; */
+    display: inline-block;
+    color: #ffffff;
+    animation: slide3 .4s both;
+    animation-delay: 2s;
+    margin-top: 40px;
+    margin-right:43px;
+}
+
+.dic{
+    /* width:140px; */
+    display:inline-block;
+    color: #ffffff;
+    animation: slide3 .4s both;
+    animation-delay: 2.2s;
+    margin-top: 40px;
+}
+
+.ico :first-child{
+    font-size: 20px;
+    background-color: rgb(0, 210, 154);
+    border-radius: 6px;
+    font-weight: bold;
+    padding:0 10px;
+    display: inline-block;
+    color: black;
+}
+.ico :last-child{
+    font-size: 25px;
+}
+.dic :first-child{
+    font-size: 20px;
+    background-color: rgb(0, 210, 154);
+    border-radius: 6px;
+    font-weight: bold;
+    padding:0 10px;
+    display: inline-block;
+    color: black;
+}
+.dic :last-child{
+    font-size: 25px;
+}
+
+@keyframes slide3{
+    from {transform: translatey(200px); opacity: 0;}
+    to {transform: translatey(0px);}
+}
+
+/* FOTKA */
+
+.fotka{
+    width: 35vw;
+    min-width: 480px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px 0 0 1000px;
+    animation: pozadie 1s both;
+    animation-delay: 2.5s;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(148deg, rgb(28, 28, 28) 50%, rgb(0,27, 22) 60%, rgb(0, 56, 46) 70%, rgb(0, 77, 63) 80%, rgb(0,94, 74) 90%, rgb(0,130, 119) 100%);
+}
+
+@keyframes pozadie{
+  from{filter: blur(10px); opacity: 0;}
+  to{filter: blur(0px); opacity: 1;}
+}
+
+.mojaFotka{
+    min-width: 320px;
+    width: 23.5vw;
+    max-width: 700px;
+    animation: bl 1s both;
+    animation-delay: 2.7s;
+}
+
+@keyframes bl{
+  from{filter: blur(0px); opacity: 0;transform: translatey(200px)}
+  to{filter: blur(0px); opacity: 1;}
+}
+
+/* MEDIA */
+
+@media screen and (max-width:951.2px) {
+    .hamburger {
+      display: inline-flex;
+      cursor: pointer;
+      margin-right: 30px;
+  }
+    .hamburger #closeHam {
+      display: none;
+  }
+    .navi {
+      display: none;
+      flex-direction: column;
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 25px;
+      background-color: rgb(0, 210, 154);
+      width: 150px;
+      margin-top: 40px;
+      z-index: 1;
+  }
+    .navi a{
+      padding: 0px; margin: 0px;color: black;font-weight: bold;
+      animation: none;
+  }
+    .logo{
+      font-size: 35px;
+  }   
+    .udajeWrap .meno{
+      font-size: 25px;
+  }
+    .udajeWrap .adresa{
+      font-size: 20px;
+  }
+    .udajeWrap .mail{
+      font-size: 18px;
+  }
+    .udajeWrap .tel{
+      font-size: 25px;
+  }
+    .ico :first-child{
+      font-size: 15px;
+  }
+    .ico :last-child{
+      font-size: 20px;
+  }
+    .dic :first-child{
+      font-size: 15px;
+  }
+    .dic :last-child{
+      font-size: 20px;
+  }
+  
+    .udaje{
+      padding-bottom: 0px;
+  }
+}
+
+
