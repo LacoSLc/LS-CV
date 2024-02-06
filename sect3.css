@@ -147,6 +147,7 @@
     place-items: center;
     box-shadow:0px 0px 5px rgb(0, 185, 136);
     transition: .4s ease;
+    scale: 0.9;
 }
 
 .sec3 img{
@@ -268,6 +269,10 @@
     }
     .fotoback{
         scale: 0.8;
+    }
+
+    .fotoback:hover{
+        scale: 0.9;
     }
 
     .fotoWrapper{

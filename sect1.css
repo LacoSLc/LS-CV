@@ -8,6 +8,11 @@
 }
 
 /* HEADER */
+.sec1 .headerWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .sec1 header{
     background-color: rgba(10, 10, 10, 0);
@@ -15,6 +20,7 @@
     align-items: center;
     width: 100%;
     height: 10vh;
+    max-width: 4000px;
 }
 
 .navi{
@@ -227,7 +233,7 @@ a:hover{
 }
 
 .mojaFotka{
-    min-width: 320px;
+    min-width: 280px;
     width: 23.5vw;
     max-width: 700px;
     animation: bl 1s both;
@@ -270,28 +276,28 @@ a:hover{
       font-size: 35px;
   }   
     .udajeWrap .meno{
-      font-size: 25px;
+      font-size: 22px;
   }
     .udajeWrap .adresa{
-      font-size: 20px;
+      font-size: 17px;
   }
     .udajeWrap .mail{
-      font-size: 18px;
+      font-size: 15px;
   }
     .udajeWrap .tel{
-      font-size: 25px;
+      font-size: 22px;
   }
     .ico :first-child{
-      font-size: 15px;
+      font-size: 12px;
   }
     .ico :last-child{
-      font-size: 20px;
-  }
-    .dic :first-child{
       font-size: 15px;
   }
+    .dic :first-child{
+      font-size: 12px;
+  }
     .dic :last-child{
-      font-size: 20px;
+      font-size: 15px;
   }
   
     .udaje{

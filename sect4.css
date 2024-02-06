@@ -1,12 +1,15 @@
 .sec4{
     margin: 0;padding: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(28, 28, 28);
     /* display: flex;
     justify-content: center;    */
     font-family: 'Monoton';
     /* border: 1px solid white; */
+    background-image: url(foto/book.png);
+    background-size: 67%;
+    background-repeat: no-repeat;
 }
 
 @font-face {
@@ -25,6 +28,7 @@
                     0 0 60px rgb(206, 41, 195),
                     0 0 120px rgb(232, 66, 221),
                     0 0 180px rgb(239, 125, 232); */
+    padding-top: 30px;
 }
 
 .sec4 main{
