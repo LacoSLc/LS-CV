@@ -7,9 +7,6 @@
     justify-content: center;    */
     font-family: 'Monoton';
     /* border: 1px solid white; */
-    background-image: url(foto/book.png);
-    background-size: 67%;
-    background-repeat: no-repeat;
 }
 
 @font-face {

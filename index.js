@@ -34,3 +34,32 @@ window.onscroll = () => {
     })    
 }
 
+
+// SECTION 3 GALLERY
+
+let fishButton = document.querySelector('#fishButton');
+let closer1 = document.querySelector('#closer1');
+let galleryFish = document.querySelector("#wrapperFish");
+
+const galleryEventF = (gallery, close, open) => {
+    galleryFish.style.display = gallery;
+    closer.style.display = close;
+    fishButton.style.display = open;
+};
+
+fishButton.addEventListener('click', () => galleryEventF("flex", "block", "none"));
+closer1.addEventListener('click', () => galleryEventF("none", "none", "block"));
+
+
+
+let archeryhButton = document.querySelector('#archeryButton');
+let closer2 = document.querySelector('#closer2');
+let galleryArchery = document.querySelector("#wrapperArchery");
+
+const galleryEventA = (gallery, close, open) => {
+    galleryArchery.style.display = gallery;
+    archeryButton.style.display = open;
+};
+
+archeryButton.addEventListener('click', () => galleryEventA("flex", "block", "none"));
+closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
