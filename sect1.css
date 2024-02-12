@@ -269,40 +269,45 @@ a:hover{
       z-index: 1;
   }
     .navi a{
-      padding: 0px; margin: 0px;color: black;font-weight: bold;
+      padding: 0px; margin:0;color: black;font-weight: bold;
       animation: none;
   }
     .logo{
       font-size: 35px;
   }   
     .udajeWrap .meno{
-      font-size: 22px;
+      font-size: 20px;
   }
     .udajeWrap .adresa{
-      font-size: 17px;
+      font-size: 15px;
   }
     .udajeWrap .mail{
       font-size: 15px;
   }
     .udajeWrap .tel{
-      font-size: 22px;
+      font-size: 20px;
   }
     .ico :first-child{
-      font-size: 12px;
+      font-size: 10px;
   }
     .ico :last-child{
-      font-size: 15px;
+      font-size: 13px;
   }
     .dic :first-child{
-      font-size: 12px;
+      font-size: 10px;
   }
     .dic :last-child{
-      font-size: 15px;
+      font-size: 13px;
   }
+
+    .ico{
+        margin-top: 20px;
+    }
+    .dic{
+        margin-top: 20px;
+    }
   
     .udaje{
       padding-bottom: 0px;
   }
 }
-
-
