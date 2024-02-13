@@ -15,45 +15,72 @@
 }
 
 .sec4 h1{
-    font-size: 6vw;
-    text-align: center;
-    /* border: 1px solid red; */
+    font-size: 5vw;
+    text-align: right;
     color:rgb(252, 86, 180);
-    /* text-shadow: 0 0 5px rgb(85, 0, 80),
-                    0 0 10px rgb(126, 5, 118),
-                    0 0 30px rgb(192, 26, 181),
-                    0 0 60px rgb(206, 41, 195),
-                    0 0 120px rgb(232, 66, 221),
-                    0 0 180px rgb(239, 125, 232); */
     padding-top: 30px;
+    margin-right: 100px;
+    /* text-shadow: 0 0 5px rgb(85, 0, 80),
+                0 0 10px rgb(126, 5, 118),
+                0 0 30px rgb(192, 26, 181),
+                0 0 60px rgb(206, 41, 195),
+                0 0 120px rgb(232, 66, 221),
+                0 0 180px rgb(239, 125, 232); */
 }
+
+.iam{
+    color: ghostwhite;
+    font-size: 3vw;
+}
+
+.sec4 .p1{
+    color: ghostwhite;
+    font-size: 3vw;
+    margin-left: 120px;
+    
+}
+
+.skills{
+    font-size: 5vw;
+    color: rgb(252, 86, 180);
+}
+
+/* ____MAIN____ */
 
 .sec4 main{
-    size: inherit;
-    /* border: 1px solid blue;  */
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
 }
 
-.background{
-    /* border: 5px solid green; */
+.h2wrapp{
+    margin-top: 10px;
     display: inline-block;
-    margin-top: 20px;
-    position: relative;
 }
 
-.sec4 img{
-    width: 49vw;
+.sec4 h2{
+    background-color:rgb(65, 64, 64);
+    font-size: 1.5vw;
+    color: ghostwhite;
+    display: block;
+    width: 9vw;
+    min-width: 50px ;
+    text-align: center;
+    margin-left: 10px;
+    border-bottom: 1px solid black
 }
 
-.screen{
-    position: absolute;
-    width: 597px;
-    height: 337px;
-    background-color: rgb(100, 100, 100);
-    position: absolute;
-    bottom: 150px;
-    left: 77px;
-    border: 5px;
- 
+.sec4 h2:active{
+    background-color: #2c2c2c;
+}
+
+.percenta{
+    width: 100%;
+    height: calc(100%-10px);
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #2c2c2c;;
+
 }

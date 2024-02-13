@@ -249,56 +249,66 @@ a:hover{
 
 @media screen and (max-width:951.2px) {
     .hamburger {
-      display: inline-flex;
-      cursor: pointer;
-      margin-right: 30px;
-  }
+        display: inline-flex;
+        cursor: pointer;
+        margin-right: 30px;
+    }
     .hamburger #closeHam {
-      display: none;
-  }
+        display: none;
+    }
     .navi {
-      display: none;
-      flex-direction: column;
-      float: right;
-      position: absolute;
-      right: 0;
-      top: 25px;
-      background-color: rgb(0, 210, 154);
-      width: 150px;
-      margin-top: 40px;
-      z-index: 1;
-  }
+        margin: 0;padding: 0;
+        display: none;
+        flex-direction: column;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        background-color: rgb(0, 210, 154);
+        width: 150px;
+        z-index: 1;
+        padding: 5px 0;
+        margin-right: 10px;
+    }
     .navi a{
-      padding: 0px; margin: 0px;color: black;font-weight: bold;
-      animation: none;
-  }
+        padding: 0px; margin:0;color: black;font-weight: bold;
+        text-align: center;
+        color: white;
+        animation: none;
+    }
     .logo{
-      font-size: 35px;
-  }   
+        font-size: 35px;
+    }   
     .udajeWrap .meno{
-      font-size: 22px;
-  }
+        font-size: 20px;
+    }
     .udajeWrap .adresa{
-      font-size: 17px;
-  }
+        font-size: 15px;
+    }
     .udajeWrap .mail{
-      font-size: 15px;
-  }
+        font-size: 15px;
+    }
     .udajeWrap .tel{
-      font-size: 22px;
-  }
+        font-size: 20px;
+    }
     .ico :first-child{
-      font-size: 12px;
-  }
+        font-size: 10px;
+    }
     .ico :last-child{
-      font-size: 15px;
-  }
+        font-size: 13px;
+    }
     .dic :first-child{
-      font-size: 12px;
-  }
+        font-size: 10px;
+    }
     .dic :last-child{
-      font-size: 15px;
-  }
+        font-size: 13px;
+    }
+    .ico{
+        margin-top: 20px;
+    }
+    .dic{
+        margin-top: 20px;
+    }
   
     .udaje{
       padding-bottom: 0px;

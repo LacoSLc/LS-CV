@@ -61,5 +61,9 @@ const galleryEventA = (gallery, close, open) => {
     archeryButton.style.display = open;
 };
 
-archeryButton.addEventListener('click', () => galleryEventA("flex", "block", "none"));
+archeryhButton.addEventListener('click', () => galleryEventA("flex", "block", "none"));
 closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
+
+
+
+
