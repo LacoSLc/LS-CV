@@ -69,3 +69,9 @@
     border-radius: 20px;
     backdrop-filter: blur(10px);
 }
+
+@media screen and (max-width:951.2px){
+    .podkarta{
+        rotate: 90deg;
+    }
+}
