@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .podkarta{
@@ -36,7 +37,9 @@
 
 @keyframes move1{
     0% {transform:translateY(0px) ;}
-    50% {transform:translateY(290px) ;}
+    25% {transform:translateY(5px) ;}
+    50% {transform: translatex(5px);}
+    75% {transform: translatey(-5px);}
 
 }
 
@@ -57,7 +60,10 @@
 }
 @keyframes move2{
     0% {transform:translateY(0px) ;}
-    50% {transform:translateY(-290px) ;}
+    25% {transform:translateY(-5px) ;}
+    50% {transform: translatex(5px);}
+    75% {transform: translatey(5px);}
+}
 
 }
 
