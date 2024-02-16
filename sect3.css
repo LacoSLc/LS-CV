@@ -17,12 +17,6 @@
 @font-face {
     font-family: 'Monoton';
     src: url(fonts/Monoton-Regular.ttf) format("opentype");
-    src: url('Monoton-Regular.eot'); /* IE9 Compat Modes */
-    src: url('Monoton-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('Monoton-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('Monoton-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-    url('Monoton-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('Monoton-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .neon{
@@ -40,7 +34,7 @@
     margin-left: 5vw;
     font-family: 'Monoton' !important;
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 100;
     z-index: 2;
 }
 
