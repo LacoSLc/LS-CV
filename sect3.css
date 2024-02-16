@@ -15,17 +15,14 @@
 }
 
 @font-face {
-    font-family:'Mexcellent 3D';
-    src: url(fonts/mexcellent\ 3d.otf) format("opentype");
-}
-@font-face {
-    font-family:'Mexcellent';
-    src: url(fonts/mexcellent\ rg.otf) format("opentype");
-}
-
-@font-face {
     font-family: 'Monoton';
     src: url(fonts/Monoton-Regular.ttf) format("opentype");
+    src: url('Monoton-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Monoton-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Monoton-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('Monoton-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('Monoton-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('Monoton-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .neon{
