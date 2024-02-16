@@ -38,7 +38,7 @@
                 0px 0px 125px rgb(86, 228, 191), 
                 0px 0vw 150px rgb(126, 219, 194);
     margin-left: 5vw;
-    font-family: 'Monoton';
+    font-family: 'Monoton' !important;
     font-size: 80px;
     font-weight: 600;
     z-index: 2;
