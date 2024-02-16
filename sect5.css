@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(28, 28, 28);
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
         0 0 30px rgb(252, 86, 180),
         0 0 60px rgb(252, 86, 180);
 
-    animation: move1 10s infinite linear;
+    animation: move1 5s infinite linear;
 }
 
 @keyframes move1{
@@ -40,7 +40,6 @@
     25% {transform:translateY(5px) ;}
     50% {transform: translatex(5px);}
     75% {transform: translatey(-5px);}
-
 }
 
 .gulaprava{
@@ -56,7 +55,8 @@
         0 0 30px rgb(0, 210, 154),
         0 0 60px rgb(0, 210, 154);
     
-        animation: move2 10s infinite linear;
+        animation: move2 5s infinite linear;
+        animation-delay: .5s;
 }
 @keyframes move2{
     0% {transform:translateY(0px) ;}
@@ -73,6 +73,7 @@
     border-radius: 20px;
     backdrop-filter: blur(10px);
 }
+
 
 @media screen and (max-width:951.2px){
     .podkarta{
