@@ -14,7 +14,7 @@
     src: url(fonts/Monoton-Regular.ttf) format("opentype");
 }
 
-.sec4 h1{
+.sec4 .webdev{
     font-size: 5vw;
     text-align: right;
     color:rgb(252, 86, 180);
