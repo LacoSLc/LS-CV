@@ -214,7 +214,7 @@ a:hover{
 
 .fotka{
     width: 35vw;
-    min-width: 480px;
+    min-width: 490px;
     max-width: 1000px;
     display: flex;
     align-items: center;
@@ -309,10 +309,19 @@ a:hover{
     .dic{
         margin-top: 20px;
     }
-  
     .udaje{
+      margin-top: 20px;
+      margin-bottom: 0px;
       padding-bottom: 0px;
-  }
+    }
+    .fotka{
+        margin-top: 0px;
+    }
+    .mojaFotka{
+        margin-top: 0px;
+    }
+    .main{
+        row-gap: 0px;
+        column-gap: 0px;
+    }
 }
-
-
