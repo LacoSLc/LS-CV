@@ -1,6 +1,5 @@
 .sec1{
     width: 100%;
-    /* min-height: 700px; */
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,7 +19,6 @@
     align-items: center;
     width: 100%;
     height: 10vh;
-    max-width: 4000px;
 }
 
 .navi{
@@ -87,10 +85,10 @@ a:hover{
     font-weight: 800;
     color: white;
     align-items: center;
-    justify-content: right;
-    width: 100%;
+    /* width: 100%; */
     animation: slide .6s both;
     animation-delay: .2s;
+    text-align: end;
 }
 
 /* MAIN */
@@ -111,7 +109,7 @@ a:hover{
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    padding-bottom: 12vh;
+    padding-bottom: 70px;
 }
 
 .meno{
@@ -247,9 +245,9 @@ a:hover{
 
 /* MEDIA */
 
-@media screen and (max-width:951.2px) {
+@media screen and (max-width:962px) {
     .hamburger {
-        display: inline-flex;
+        display: inline-block;
         cursor: pointer;
         margin-right: 30px;
     }
