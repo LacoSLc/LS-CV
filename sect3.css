@@ -1,7 +1,8 @@
 .sec3{
     position: relative;
-    width: 100%;
+    width: min(100%, 3000px);
     min-height: 100vh;
+    padding-top: 20px;
     background-color: rgb(28, 28, 28);
 }
 
@@ -10,20 +11,12 @@
 .sec3 header{
     display: flex;
     align-items: center;
-    font-weight: bold;
-    /* border: 1px solid blue; */    
 }
 
 
 @font-face {
     font-family: 'Monoton';
     src: url(fonts/Monoton-Regular.ttf) format("opentype");
-    src: url('Monoton-Regular.eot'); /* IE9 Compat Modes */
-    src: url('Monoton-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Monoton-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('Monoton-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('Monoton-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('Monoton-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .neon{
@@ -38,9 +31,9 @@
                 0px 0px 15px rgb(61, 212, 172), 
                 0px 0px 125px rgb(86, 228, 191), 
                 0px 0vw 150px rgb(126, 219, 194);
-    margin-left: 5vw;
+    margin-left: 100px;
     font-family: 'Monoton';
-    font-size: 80px;
+    font-size: clamp(50px, 5vw, 120px) ;
     font-weight: 100;
     z-index: 2;
 }
@@ -65,17 +58,16 @@
 /* MAIN */
 
 .sec3 main{
-    min-height: calc(100vh - 148px);
+    min-height: calc(100vh - 124px) ;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid rgb(255, 255, 255); */
 }
 
 .fotoWrapper{
     display: flex;
     flex-wrap: wrap;
-    gap: 5vw;
+    gap: 3vw;
     align-items: center;
     justify-content: center;
 }
@@ -89,7 +81,7 @@
     place-items: center;
     box-shadow:0px 0px 5px rgb(0, 185, 136);
     transition: .4s ease;
-    scale: 0.9;
+    /* scale: 0.9; */
 }
 
 .sec3 .fotoHob{
@@ -171,22 +163,22 @@
 
 @media screen and (max-width:951.2px){
     .neon{
-        font-size: 50px;
-        margin: 0 auto;
-        margin-top: 30px;
+        /* font-size: 50px; */
+        margin: 20px auto;
+
     }
     .fotoback{
-        scale: 0.75;
+        scale: .8;
     }
-
-    .fotoback:hover{
-        scale: 0.9;
+    .fotoWrapper{
+        padding-bottom: 30px;
     }
-
-    #wrapp{
-        scale: 0.5;
+    .sec3 main{
+        min-height: 100vh;
     }
-
+    .sec3{
+        padding-top: 0px;
+    }
 }
 
 
@@ -195,15 +187,14 @@
 /* FISHING */
 
 #wrapperFish{
-    position: absolute;
+    position:absolute;
+    display: none;
     width: 100%;
     min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
     background-color: rgb(28, 28, 28);
-    z-index: 1;
+    z-index: 2;
 }
 
 #wrapp{
@@ -213,14 +204,14 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 .box{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 100px;
     transition:all .5s;
     margin: 0 5px;
     border-radius: 50px;
@@ -236,7 +227,7 @@
     position: absolute;
     background-color: transparent;
     font-size: 40px;
-    bottom: 600px;
+    bottom: 570px;
     border: none;
     color: white;
 }
@@ -255,38 +246,11 @@
     z-index: 1;
 }
 
-#wrapp{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    padding-top: 90px;
-}
-
-.box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    transition:all .5s;
-    transition:all .5s;
-    margin: 0 5px;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-.box:hover{
-    width: 400px;
-    transition:all .5s;
-}
-
 #closer2{
     position: absolute;
     background-color: transparent;
     font-size: 40px;
-    bottom: 600px;
+    bottom: 570px;
     border: none;
     color: white;
 }
