@@ -1,9 +1,10 @@
 .sec1{
-    width: 100%;
+    width: min(100%, 3000px);
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -35,7 +36,7 @@
     margin-left: 35px;
     animation: slide .6s both;
     animation-delay: .1s;
-    font-size: 60px;
+    font-size: clamp(40px, 4vw, 100px);
     letter-spacing: 2px;
     margin-right: 10px;
 }
@@ -43,7 +44,7 @@
 .navi a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: clamp(20px, 1.4vw, 50px);
     margin: 0 5px;
     margin-bottom: 30px;
     transition: .4s all;
@@ -93,28 +94,27 @@ a:hover{
 
 /* MAIN */
 /* UDAJE */
-
+  
 .sec1 main{
     min-height: 90vh;
     display: flex;
     align-items: end;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
 }
 
 .udaje{
     min-width: 430px;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    padding-bottom: 70px;
+    /* display: flex;
+    justify-content: center; */
+    /* margin-top: 30px; */
+    padding-bottom: clamp(0px, 12vh, 150px);
+    padding-left: 150px;
 }
 
 .meno{
     color: rgb(21, 21, 21);
-    font-size: 30px;
+    font-size: clamp(20px, 2vw, 60px);
     background-color: rgb(0, 210, 154);
     border-radius: 10px;
     font-weight: bold;
@@ -131,7 +131,7 @@ a:hover{
 .adresa{
     color: white;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: clamp(15px,1.7vw, 50px);
     animation: slide2 .6s both;
     animation-delay: 1.2s; 
 }
@@ -139,7 +139,7 @@ a:hover{
 .mail{
     color: white;
     margin-top: 20px;
-    font-size: 23px; 
+    font-size: clamp(15px, 2vw, 55px); 
     animation: slide2 .6s both;
     animation-delay: 1.4s; 
 }
@@ -147,7 +147,7 @@ a:hover{
 .tel{
     color: white;
     margin-top:20px;
-    font-size: 30px;
+    font-size: clamp(15px,1.7vw, 50px);
     animation: slide2 .6s both;
     animation-delay: 1.6s; 
 }
@@ -178,20 +178,9 @@ a:hover{
     margin-top: 40px;
 }
 
-.ico :first-child{
-    font-size: 20px;
-    background-color: rgb(0, 210, 154);
-    border-radius: 6px;
-    font-weight: bold;
-    padding:0 10px;
-    display: inline-block;
-    color: black;
-}
-.ico :last-child{
-    font-size: 25px;
-}
+.ico :first-child,
 .dic :first-child{
-    font-size: 20px;
+    font-size: clamp(10px, 1.3vw, 40px);
     background-color: rgb(0, 210, 154);
     border-radius: 6px;
     font-weight: bold;
@@ -199,8 +188,9 @@ a:hover{
     display: inline-block;
     color: black;
 }
+.ico :last-child,
 .dic :last-child{
-    font-size: 25px;
+    font-size: clamp(13px, 1.6vw, 55px);
 }
 
 @keyframes slide3{
@@ -245,7 +235,7 @@ a:hover{
 
 /* MEDIA */
 
-@media screen and (max-width:962px) {
+@media screen and (max-width:920px) {
     .hamburger {
         display: inline-block;
         cursor: pointer;
@@ -274,33 +264,6 @@ a:hover{
         color: white;
         animation: none;
     }
-    .logo{
-        font-size: 35px;
-    }   
-    .udajeWrap .meno{
-        font-size: 20px;
-    }
-    .udajeWrap .adresa{
-        font-size: 15px;
-    }
-    .udajeWrap .mail{
-        font-size: 15px;
-    }
-    .udajeWrap .tel{
-        font-size: 20px;
-    }
-    .ico :first-child{
-        font-size: 10px;
-    }
-    .ico :last-child{
-        font-size: 13px;
-    }
-    .dic :first-child{
-        font-size: 10px;
-    }
-    .dic :last-child{
-        font-size: 13px;
-    }
     .ico{
         margin-top: 20px;
     }
@@ -309,8 +272,11 @@ a:hover{
     }
     .udaje{
       margin-top: 20px;
-      margin-bottom: 0px;
+      margin-bottom: 10px;
       padding-bottom: 0px;
+      padding-left: 0px;
+      display: flex;
+      justify-content: start;
     }
     .fotka{
         margin-top: 0px;
@@ -321,5 +287,9 @@ a:hover{
     .main{
         row-gap: 0px;
         column-gap: 0px;
+    }
+
+    .adresa, .mail, .tel{
+        margin-top: 10px;
     }
 }
