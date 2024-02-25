@@ -42,8 +42,9 @@ body{
 }
 
 @media screen and (max-width:920px){
-    .sideNavi a{
-        width: 10px;
-        height: 10px;
+    .sideNavi{
+        display:none;
+        position:none;
+
     }
 }
