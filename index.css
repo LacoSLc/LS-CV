@@ -45,6 +45,9 @@ body{
     .sideNavi{
         display:none;
         position:none;
-
+    }
+    .sideNavi a{
+        display:none;
+        position:none;
     }
 }
