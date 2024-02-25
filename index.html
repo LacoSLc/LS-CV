@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="sect4.css">
     <link rel="stylesheet" href="sect5.css">
     <link rel="stylesheet" href="fonts/mexcellent 3d.otf">
-    <link rel="stylesheet" href="fonts/mexcellent rg.otf">
-                
-                
+    <link rel="stylesheet" href="fonts/mexcellent rg.otf">                
     <title>Portfolio</title>
 </head>
 
@@ -20,13 +18,25 @@
 
 <body>
 
-  <!-------- SECTION 1 ------->
+  <!-- SIDE NAVIGATION -->
 
-  <section class="sec1 show-animate">
+  <div class="sideNavi sideWrapp">
+      <a href="#sec1"></a>
+      <a href="#sec2"></a>
+      <a href="#sec3"></a>
+      <a href="#sec4"></a>
+      <a href="#sec5"></a>
+  </div>
+
+
+  <!-------- SECTION 1 ------->
+  
+
+  <section id="sec1" class="sec1 show-animate">
     <div class="headerWrap">
       <header>
         <h1 class="logo">
-            ŽIVOTOPIS
+            PORTFOLIO
         </h1>
           <nav class="navi">
             <a class="a1" href="https://www.facebook.com/laco.szabo/" target="_blank">FACEBOOK</a>
@@ -83,7 +93,7 @@
 
  <!------- SECTION 2 -------->
 
-  <section class="sec2">
+  <section id="sec2" class="sec2">
     <div class="container2">
       <div class="leftside" id="animate">
         <div class="skusenosti">
@@ -135,13 +145,13 @@
 
 <!-- SECTION 3 -->
   
-  <section class="sec3">
+  <section id="sec3" class="sec3">
     
     <!-- HIDDEN GALLERY -->
     <div id="wrapperFish">
       <div id="wrapp">
           <div class="box"><img src="foto/ryby/1.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/ryby/2.jpg" alt="" width="400px"></div>                 
+          <div class="box"><img src="foto/ryby/2.jpg" alt="" width="400px"></div>
           <div class="box"><img src="foto/ryby/3.jpg" alt="" width="400px"></div> 
           <div class="box"><img src="foto/ryby/4.jpg" alt="" width="400px"></div> 
           <div class="box"><img src="foto/ryby/5.jpg" alt="" width="400px"></div> 
@@ -166,7 +176,7 @@
     <header>
       <p class="neon" data-text="U">HO<span class="flicker-slow">B</span>B<span class="flicker-fast">I</span>ES</p>
     </header>
-
+    <!-- MAIN -->
     <main>
       
       <div class="fotoWrapper">
@@ -199,7 +209,7 @@
             <div class="layoutWrap">
               <p>DRONE</p>
               <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.asdasdsad adasd as asd asd.</p>
-              <button class="droneButton">See more</button>
+              <button id="droneButton"><a href="https://www.youtube.com/channel/UCxGXeQGEtifBb9eJD1WE3yA"></a>See more</button>
             </div>
           </div>
         </div>
@@ -211,9 +221,9 @@
 
 <!-- SECTION 4 -->
 
-  <section class="sec4">
+  <section id="sec4" class="sec4">
       <p class="webdev">Hi, <span class="iam">I am</span> WEB Developer</p>
-      <p class="p1">...let's look at my <span class="skills">skiils</span></p>
+      <p class="p1">...let's look at my <span class="skills">skiils</span>...</p>
 
     <main>
       <div class="h2wrapp">
@@ -221,28 +231,40 @@
         <h2 id="css">CSS</h2>
         <h2 id="js">JS</h2>
         <h2 id="python">PYTHON</h2>
+        <h2 id="github">Github</h2>
       </div>
       <div class="percenta">
-        <div id="perhtml"></div>
-        <div id="percss"></div>
-        <div id="perjs"></div>
-        <div id="perpython"></div>
+        <div id="perhtml" class="wrappPer">
+          <ul>
+            <li>Basic HTML structure and syntax</li>
+            <li>Semantic HTML</li>
+            <li>HTML forms and inputs</li>
+            <li>HTML5 futures and API's</li>
+            <li>Accessibility best practices</li>
+          </ul>
+        </div>
+        <div id="percss" class="wrappPer">
+          <ul>
+            <li>CSS syntax and selector</li>
+            <li>BOX model and layout</li>
+            <li>CSS3 features (transitions, amnimations, etc.)</li>
+            <li>Responsive web design</li>
+            <li>CSS frameworks (Bootstrap, Foundation, etc.)</li>
+          </ul>
+        </div>
+        <div id="perjs" class="wrappPer"></div>
+        <div id="perpython" class="wrappPer"></div>
+        <div id="pergithub" class="wrappPer"></div>
           
-
-        
       </div>
 
     </main>
 
   </section>
 
-
-
-
-
   <!-- SECTION 5 -->
 
-  <section class="sec5">
+  <section id="sec5" class="sec5">
     <div class="podkarta">
       <div class="gulalava"></div>
       <div class="gulaprava"></div>
@@ -255,5 +277,6 @@
 
   <footer></footer>
   <script src="index.js"></script>
+
 </body>
 </html>
