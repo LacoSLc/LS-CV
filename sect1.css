@@ -280,9 +280,11 @@ a:hover{
     .mojaFotka{
         margin-top: 0px;
     }
-    .main{
+    .sec1 main{
         row-gap: 0px;
         column-gap: 0px;
+        align-items: center;
+        justify-content: center;
     }
 
     .adresa, .mail, .tel{
