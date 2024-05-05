@@ -168,10 +168,10 @@
 
     }
     .fotoback{
-        scale: .8;
+        scale: .85;
     }
     .fotoback:hover{
-        scale: .9;
+        scale: .95;
     }
     .fotoWrapper{
         padding-bottom: 30px;
