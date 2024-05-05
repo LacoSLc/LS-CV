@@ -250,7 +250,7 @@ a:hover{
         background-color: rgb(28, 28, 28);
         width: 100vw;
         z-index: 1;
-        padding-bottom: 30px;
+        padding-bottom: 60px;
         gap:8px;
     }
     .navi a{
