@@ -15,7 +15,6 @@
 }
 
 .sec1 header{
-    background-color: rgba(10, 10, 10, 0);
     display: flex;
     align-items: center;
     width: 100%;
@@ -105,9 +104,6 @@ a:hover{
 
 .udaje{
     min-width: 430px;
-    /* display: flex;
-    justify-content: center; */
-    /* margin-top: 30px; */
     padding-bottom: clamp(0px, 12vh, 150px);
     padding-left: 150px;
 }
