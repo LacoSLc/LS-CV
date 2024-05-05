@@ -283,9 +283,6 @@ a:hover{
     .main{
         row-gap: 0px;
         column-gap: 0px;
-        display: flex;
-        justify-content: center;
-        
     }
 
     .adresa, .mail, .tel{
