@@ -5,8 +5,10 @@
     background-color: rgb(28, 28, 28);
     /* display: flex;
     justify-content: center;    */
-    font-family: 'Monoton';
+    /* font-family: 'Monoton'; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 @font-face {
@@ -14,36 +16,16 @@
     src: url(fonts/Monoton-Regular.ttf) format("opentype");
 }
 
-.sec4 .webdev{
-    font-size: clamp(40px ,5vw, 120px);
-    font-weight: 600;
-    text-align: right;
-    color:rgb(252, 86, 180);
-    padding-top: 30px;
-    margin-right: 100px;
-    /* text-shadow: 0 0 5px rgb(85, 0, 80),
-                0 0 10px rgb(126, 5, 118),
-                0 0 30px rgb(192, 26, 181),
-                0 0 60px rgb(206, 41, 195),
-                0 0 120px rgb(232, 66, 221),
-                0 0 180px rgb(239, 125, 232); */
-}
-
-.iam{
-    color: ghostwhite;
-    font-size: clamp(30px ,3vw, 70px);
-}
-
 .sec4 .p1{
     color: ghostwhite;
     font-size: clamp(30px ,3vw, 70px);
     margin-left: 120px;
-    
+    font-weight: bold;
 }
 
 .skills{
     font-size: clamp(40px ,5vw, 120px);
-    color: rgb(252, 86, 180);
+    color: rgb(0, 210, 154);
 }
 
 /* ____MAIN____ */
@@ -61,7 +43,7 @@
     display: inline-block;
 }
 
-.sec4 h2{
+.bttn{
     background-color:rgb(65, 64, 64);
     font-size: clamp(15px, 1.5vw, 40px);
     color: ghostwhite;
@@ -70,13 +52,22 @@
     min-width: 50px ;
     text-align: center;
     margin-left: 10px;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
+    border: none;
+    padding: 2px 0;
+    text-decoration: none;
 }
 
-.sec4 h2:hover{
+.bttn:hover{
     cursor: pointer;
     background-color: #2c2c2c;
 }
+
+.bttn.active{
+    background-color: #2c2c2c;
+    color:rgb(0, 210, 154)
+}
+
 .percenta{
     position: relative;
     display: flex;
@@ -84,23 +75,19 @@
     align-items: center;
     width: 100%;
     min-height: calc(100%-10px);
-    margin-top: 10px;
-    margin-right: 10px;
     background-color: #2c2c2c;
-    margin-bottom: 30px;
+    margin: 10px 10px 30px 0;
 }
 
 
 /* TABULLKY S PERCENTAMI */
 
-/*  */
 
 .percenta ul{
     margin: 10px 20px 20px 50px;
     font-family: 'Courier New', Courier, monospace;
     margin-left: clamp(30px, 3vw, 40px);
     font-size: clamp(20px, 1.5vw, 60px);
-
 }
 
 .percenta li{
@@ -111,5 +98,9 @@
 .wrappPer{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
+    /* display: none; */
+}
+
+.hide{
     display: none;
 }
