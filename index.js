@@ -56,13 +56,17 @@ let archeryButton = document.querySelector('#archeryButton');
 let closer2 = document.querySelector('#closer2');
 let galleryArchery = document.querySelector("#wrapperArchery");
 
-const galleryEventA = (gallery, close, open) => {
+const galleryEventA = (gallery,close, open) => {
     galleryArchery.style.display = gallery;
+    closer.style.display = close;
     archeryButton.style.display = open;
 };
 
 archeryButton.addEventListener('click', () => galleryEventA("flex", "block", "none"));
 closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
+
+
+
 
 // SECTION 4 
 
