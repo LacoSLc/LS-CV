@@ -128,11 +128,11 @@
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    font-family: 'Monoton';
+    font-family: 'Courier New', Courier, monospace;
     background-color: ghostwhite;
     border: 2px solid rgb(0, 185, 136);
     transition: .4s ease;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 15px;
 }
 
