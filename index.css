@@ -41,13 +41,16 @@ body{
     scale: 1.7;
 }
 
+.sideNavi a:active{
+    transition: .5s all;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0, 210, 154);
+    background-color: rgb(0, 210, 154);
+    scale: 1.7;
+}
+
 @media screen and (max-width:920px){
-    .sideNavi{
-        display:none;
-        position:none;
-    }
     .sideNavi a{
-        display:none;
-        position:none;
+        display: none;
     }
 }
