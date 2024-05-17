@@ -168,9 +168,8 @@
 
 @media screen and (max-width:951.2px){
     .neon{
-        /* font-size: 50px; */
         margin: 20px auto;
-
+        margin-bottom: 0px;
     }
     .fotoback{
         scale: .85;
