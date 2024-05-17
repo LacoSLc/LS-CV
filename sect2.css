@@ -21,12 +21,10 @@
 }
 
 .vzdelanie, .skusenosti, .jazyk{
-    width: 40vw;
-    max-width: 1000px;
-    min-width: 350px;
+    width: clamp(350px, 40vw, 1000px);
     border: solid 1px rgb(0, 210, 154);
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+    color: ghostwhite;
     padding: 0 20px 20px 20px;
     background-color: #292929;
 }
@@ -42,12 +40,19 @@
     top: -20px;
     left: 10px;
     border-radius: 4px;
+    font-size:clamp(25px, 1.5vw, 45px)
 }
 
 .sec2 h2{
     margin-bottom: 3px;
     color: white;
     text-decoration: underline;
+    font-size:clamp(20px, 1vw, 40px)
+
+}
+
+.sec2 p{
+    font-size:clamp(15px, .5vw, 35px)
 }
 
 /* SCALE BLUR EFFECT */
@@ -128,5 +133,7 @@
     .container2{
         scale: 0.8;
     }
+    .container2{
+        margin: 0;
+    }
 }
-
