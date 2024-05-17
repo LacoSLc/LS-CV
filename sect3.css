@@ -31,9 +31,9 @@
                 0px 0px 15px rgb(61, 212, 172), 
                 0px 0px 125px rgb(86, 228, 191), 
                 0px 0vw 150px rgb(126, 219, 194);
-    margin-left: 100px;
+    margin-left: clamp(100px, 9vw, 400px);
     font-family: 'Monoton';
-    font-size: clamp(50px, 5vw, 120px) ;
+    font-size: clamp(60px, 5vw, 120px) ;
     font-weight: 100;
     z-index: 2;
 }
@@ -60,15 +60,14 @@
 .sec3 main{
     min-height: calc(100vh - 124px) ;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .fotoWrapper{
     display: flex;
     flex-wrap: wrap;
     gap: 3vw;
-    align-items: center;
+    margin-top: clamp(60px, 8vw, 200px);
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -105,7 +104,7 @@
 .layoutWrap{
     width: 270px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 .layout p{
@@ -117,6 +116,12 @@
 .layout .text{
     font-size: 15px;
     margin-top: 5px;
+}
+
+.sec3 .triBodky{
+    font-size: 60px;
+    position: relative; 
+    top: -280px;
 }
 
 .layout button{
