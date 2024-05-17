@@ -19,8 +19,14 @@
 .sec4 .p1{
     color: ghostwhite;
     font-size: clamp(30px ,3vw, 70px);
-    margin-left: 120px;
     font-weight: bold;
+    position: absolute;
+    text-align: center;
+    width: calc(100% - 10px);
+}
+
+.sec4 .p1 p{
+    margin: 0 5px;
 }
 
 .skills{
@@ -48,19 +54,19 @@
     font-size: clamp(15px, 1.5vw, 40px);
     color: ghostwhite;
     display: block;
-    width: clamp(115px, 9vw, 230px);
+    width: clamp(80px, 9vw, 230px);
     min-width: 50px ;
     text-align: center;
     margin-left: 10px;
-    border-bottom: 1px solid black;
-    border: none;
     padding: 2px 0;
     text-decoration: none;
+    border: 1px solid #2c2c2c;
 }
 
 .bttn:hover{
     cursor: pointer;
     background-color: #2c2c2c;
+    color:rgb(0, 210, 154)
 }
 
 .bttn.active{
@@ -74,7 +80,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: calc(100%-10px);
+    height: 450px;
     background-color: #2c2c2c;
     margin: 10px 10px 30px 0;
 }
@@ -98,7 +104,9 @@
 .wrappPer{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    /* display: none; */
+    opacity: 1;
+    z-index: 1;
+    background-color: #2c2c2c;
 }
 
 .hide{
