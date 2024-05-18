@@ -49,7 +49,7 @@
     transition: .4s all;
 }
 
-.swc1 a:hover{
+.sec1 a:hover{
     color: rgb(0, 210, 154);
     cursor: pointer;
 }

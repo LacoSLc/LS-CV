@@ -1,5 +1,5 @@
 .sec2{
-    width: 100%;
+    width: min(100%, 3000px);
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -137,3 +137,4 @@
         margin: 0;
     }
 }
+

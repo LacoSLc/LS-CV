@@ -3,12 +3,12 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
-    /* display: flex;
-    justify-content: center;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* font-family: 'Monoton'; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    padding-top: 50px;
 }
 
 @font-face {
@@ -38,7 +38,7 @@
 
 .sec4 main{
     width: clamp(350px, 70vw, 2000px);
-    min-height: 58vh;
+    min-height: clamp(600px, 10vw, 800px);
     margin: 0 auto;
     margin-top: 40px;
     display: flex;
@@ -80,7 +80,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 450px;
     background-color: #2c2c2c;
     margin: 10px 10px 30px 0;
 }
@@ -111,4 +110,36 @@
 
 .hide{
     display: none;
+}
+
+
+.sec4 .hodnotenie{
+    font-size: clamp(50px, 6vw, 120px);
+    text-align: center;
+    /* border: 1px solid green; */
+    color: rgb(186, 186, 186);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);  
+    margin-bottom: 40px;  
+    /* background-color: rgb(2, 177, 130); */
+    width: 90%;
+    border: 2px solid #1d1d1d;
+}
+
+.h_html{
+    background: linear-gradient(90deg, rgb(2, 177, 130) 80%, rgb(65, 64, 64) 80%);
+}
+.h_css{
+    background: linear-gradient(90deg, rgb(2, 177, 130) 70%, rgb(65, 64, 64)70%);
+}
+.h_js{
+    background: linear-gradient(90deg, rgb(2, 177, 130) 10%, rgb(65, 64, 64) 10%);
+}
+.h_py{
+    background: linear-gradient(90deg, rgb(2, 177, 130) 50%, rgb(65, 64, 64) 50%);
+}
+.h_github{
+    background: linear-gradient(90deg, rgb(2, 177, 130) 10%, rgb(65, 64, 64) 10%);
 }

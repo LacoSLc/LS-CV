@@ -14,11 +14,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 40%;
+    top: 45%;
     z-index: 3;
     flex-direction: column;
     row-gap: .8rem;
-    right: 0%;    
+    right: 2%;    
 }
 
 .sideNavi a{
@@ -54,3 +54,7 @@ body{
         display: none;
     }
 }
+
+/* .sec1, .sec2, .sec3, .sec4, .sec5{
+    border: 1px solid red;
+} */
