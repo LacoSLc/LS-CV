@@ -6,7 +6,6 @@
     overflow: hidden;
     margin: 0 auto;
     position: relative;
-    border: 1px solid red;
 }
 
 /* HEADER */
@@ -99,7 +98,6 @@
     display: flex;
     align-items: end;
     width: 100%;
-    border: 1px solid blue;
 }
 .sec1 main{
     display: flex;
