@@ -27,12 +27,11 @@
     align-items: top;
     justify-content: space-evenly;
     margin-right: 10px;
-    /* height: 100%; */
 }
 
 .logo{
     color: rgb(255, 255, 255); 
-    margin-left: 4vw;
+    margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .1s;
     font-size: clamp(25px, 2.5vw, 80px);
@@ -80,7 +79,7 @@
 
 .hamburger {
     display: none;
-    font-size: clamp(25px, 2.5vw, 80px);
+    font-size: clamp(24px, 2.5vw, 80px);
     font-weight: 800;
     color: white;
     align-items: center;
