@@ -43,8 +43,9 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: clamp(20px, 1.4vw, 45px);
-    margin-bottom: 70px;
     transition: .4s all;
+    position: relative;
+    top: 7px;
 }
 
 .sec1 a:hover{
@@ -97,6 +98,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    min-height: 86vh;
 }
 
 .sec1 main{
@@ -204,7 +206,7 @@
 
 .fotka{
     width: 35vw;
-    min-width: 400px;
+    min-width: 350px;
     max-width: 800px;
     display: flex;
     align-items: center;
@@ -237,7 +239,7 @@
 
 /* MEDIA */
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:834px) {
     .sec1{
         margin-top: 10px;
     }
@@ -299,13 +301,16 @@
     }
 
     .sec1 .mainWrapper{
+        position: relative;
+        display: grid;
         align-items: end;
+        justify-content: center;
+        min-height: 95vh;
     }
     .sec1 main{
-        row-gap: 0px;
-        column-gap: 0px;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
 
     .adresa, .mail, .tel{
