@@ -1,17 +1,15 @@
 .sec3{
     position: relative;
-    width: min(100%, 3000px);
-    /* min-height: 100vh; */
-    padding-top: 20px;
+    width: min(100%, 5127px);
+    min-height: 100vh;
     background-color: rgb(28, 28, 28);
-
+    padding-top: 40px;
 }
 
 /* HEADER */
 
 .sec3 header{
-    display: flex;
-    align-items: center;
+    max-width: 2000px;
 }
 
 
@@ -22,7 +20,6 @@
 
 .neon{
     color: rgb(40, 203, 160);
-    /* font-weight: bold; */
     letter-spacing: 8px;
     text-shadow:1px 0px 4px rgb(0, 78, 57),
                 1px 0px 4px rgb(18, 170, 130), 
@@ -32,11 +29,12 @@
                 0px 0px 15px rgb(61, 212, 172), 
                 0px 0px 125px rgb(86, 228, 191), 
                 0px 0vw 150px rgb(126, 219, 194);
-    margin-left: clamp(100px, 9vw, 400px);
+    margin-left: 100px;
     font-family: 'Monoton';
-    font-size: clamp(50px, 5vw, 120px) ;
-    font-weight: 100;
-    z-index: 2;
+    font-size: clamp(50px, 6vw, 120px) ;
+    font-weight: 200;
+    /* z-index: 2; */
+    display:block;
 }
 
 .flicker-slow{
@@ -67,7 +65,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3vw;
-    /* margin-top: clamp(60px, 8vw, 200px); */
     align-items: center;
     justify-content: center;
 
@@ -165,13 +162,92 @@
     transition:.4s ease;
 }
 
+
+/* GALLERY */
+
+/* FISHING */
+
+#wrapperFish{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 28, 28);
+    z-index: 999;
+    bottom: 0;
+    overflow: auto;
+}
+
+#wrapp{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(28, 28, 28);
+    height: 92%;
+    gap: 5px;
+}
+
+.box{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: clamp(100px, 10vw, 300px); */
+    transition:all .5s;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 120px;
+}
+
+.box:hover{
+    width: 400px;
+    transition:all .5s;
+}
+
+#closer1{
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    color: white;
+    z-index: 4;
+    display: block;
+    position: relative;
+}
+
+/* ARCHERY */
+
+#wrapperArchery{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 28, 28);
+    z-index: 999;
+    bottom: 0;
+    overflow: auto;
+}
+
+#closer2{
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    color: white;
+    z-index: 4;
+    display: block;
+}
+
 /* MEDIA responsive */
 
 @media screen and (max-width:951.2px){
     .neon{
-        /* font-size: 50px; */
-        margin: 20px auto;
-
+        margin-left: 0px;
+        text-align: center;
     }
     .fotoback{
         scale: .85;
@@ -188,78 +264,10 @@
     .sec3{
         padding-top: 0px;
     }
-}
-
-
-/* GALLERY */
-
-/* FISHING */
-
-#wrapperFish{
-    position:absolute;
-    display: none;
-    width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(28, 28, 28);
-    z-index: 2;
-}
-
-#wrapp{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    padding-top: 120px;
-}
-
-.box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    transition:all .5s;
-    margin: 0 5px;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-.box:hover{
-    width: 400px;
-    transition:all .5s;
-}
-
-#closer1{
-    position: absolute;
-    background-color: transparent;
-    font-size: 40px;
-    bottom: 570px;
-    border: none;
-    color: white;
-}
-
-/* ARCHERY */
-
-#wrapperArchery{
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    background-color: rgb(28, 28, 28);
-    z-index: 1;
-}
-
-#closer2{
-    position: absolute;
-    background-color: transparent;
-    font-size: 40px;
-    bottom: 570px;
-    border: none;
-    color: white;
+    .box{
+        width: 340px;
+    }
+    .box:hover{
+        width: 340px;
+    }
 }

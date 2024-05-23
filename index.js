@@ -38,6 +38,15 @@ window.onscroll = () => {
 
 // FISHING
 
+// $(document).ready(function(){
+//   $("#wrapperFish").click(function(){
+//       $("body").css("overflow","hidden");
+//   });
+//   $("#wrapperFish").click(function(){
+//       $("body").css("overflow","auto");
+//   });
+// });
+
 let fishButton = document.querySelector('#fishButton');
 let closer1 = document.querySelector('#closer1');
 let galleryFish = document.querySelector("#wrapperFish");
@@ -47,7 +56,7 @@ const galleryEventF = (gallery, close, open) => {
     closer.style.display = close;
     fishButton.style.display = open;
 };
-fishButton.addEventListener('click', () => galleryEventF("flex", "block", "none"));
+fishButton.addEventListener('click', () => galleryEventF("block", "block", "none"));
 closer1.addEventListener('click', () => galleryEventF("none", "none", "block"));
 
 // ARCHERY
@@ -62,7 +71,7 @@ const galleryEventA = (gallery,close, open) => {
     archeryButton.style.display = open;
 };
 
-archeryButton.addEventListener('click', () => galleryEventA("flex", "block", "none"));
+archeryButton.addEventListener('click', () => galleryEventA("block", "block", "none"));
 closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
 
 
