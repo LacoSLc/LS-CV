@@ -49,7 +49,7 @@ body{
     scale: 1.7;
 }
 
-@media screen and (max-width:920px){
+@media screen and (max-width:779px){
     .sideNavi a{
         display: none;
     }
