@@ -203,8 +203,8 @@
 /* FOTKA */
 
 .fotka{
-    width: 34vw;
-    min-width: 490px;
+    width: 35vw;
+    min-width: 400px;
     max-width: 800px;
     display: flex;
     align-items: center;
@@ -223,8 +223,8 @@
 }
 
 .mojaFotka{
-    min-width: 345px;
-    width: 22vw;
+    min-width: 255px;
+    width: 22.5vw;
     max-width: 720px;
     animation: bl 1s both;
     animation-delay: 2.7s;
@@ -238,6 +238,10 @@
 /* MEDIA */
 
 @media screen and (max-width:920px) {
+    .sec1{
+        margin-top: 10px;
+    }
+    
     .hamburger {
         display: inline-block;
         cursor: pointer;
