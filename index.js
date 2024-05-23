@@ -38,14 +38,6 @@ window.onscroll = () => {
 
 // FISHING
 
-// $(document).ready(function(){
-//   $("#wrapperFish").click(function(){
-//       $("body").css("overflow","hidden");
-//   });
-//   $("#wrapperFish").click(function(){
-//       $("body").css("overflow","auto");
-//   });
-// });
 
 let fishButton = document.querySelector('#fishButton');
 let closer1 = document.querySelector('#closer1');
@@ -73,6 +65,21 @@ const galleryEventA = (gallery,close, open) => {
 
 archeryButton.addEventListener('click', () => galleryEventA("block", "block", "none"));
 closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
+
+// DRONE
+
+let droneButton = document.querySelector('#droneButton');
+let closer3 = document.querySelector('#closer3');
+let galleryDrone = document.querySelector("#wrapperDrone");
+
+const galleryEventD = (gallery,close, open) => {
+    galleryDrone.style.display = gallery;
+    closer.style.display = close;
+    droneButton.style.display = open;
+};
+
+droneButton.addEventListener('click', () => galleryEventD("block", "block", "none"));
+closer3.addEventListener('click', () => galleryEventD("none", "none", "block"));
 
 
 
