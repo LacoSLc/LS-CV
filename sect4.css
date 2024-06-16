@@ -18,7 +18,7 @@
 
 .sec4 .p1{
     color: ghostwhite;
-    font-size: clamp(30px ,3vw, 70px);
+    font-size: clamp(20px ,2.5vw, 70px);
     font-weight: bold;
     position: absolute;
     text-align: center;
@@ -37,8 +37,8 @@
 /* ____MAIN____ */
 
 .sec4 main{
-    width: clamp(350px, 70vw, 2000px);
-    height: clamp(600px, 12vw, 1200px);
+    width: clamp(350px, 60vw, 2000px);
+    height: clamp(400px, 10vw, 1200px);
     margin: 0 auto;
     margin-top: 40px;
     display: flex;
@@ -51,11 +51,11 @@
 
 .bttn{
     background-color:rgb(65, 64, 64);
-    font-size: clamp(15px, 1.5vw, 40px);
+    font-size: clamp(13px, 1.3vw, 40px);
     color: ghostwhite;
     display: block;
-    width: clamp(80px, 9vw, 230px);
-    min-width: 50px ;
+    width: clamp(90px, 9vw, 230px);
+    min-width: 50px;
     text-align: center;
     margin-left: 10px;
     padding: 2px 0;
@@ -83,6 +83,7 @@
     background-color: #2c2c2c;
     margin: 10px 10px 30px 0;
     border-radius: 0 5px 5px 5px;
+    /* border: 1px solid green; */
 }
 
 
@@ -90,10 +91,11 @@
 
 
 .percenta ul{
-    margin: 10px 20px 20px 50px;
+    margin: 20px;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: clamp(30px, 3vw, 45px);
-    font-size: clamp(20px, 1.5vw, 40px);
+    margin-left: clamp(30px, 3.8vw, 60px);
+    font-size: clamp(16px, 1.5vw, 40px);
+    /* border: 1px solid green; */
 }
 
 .percenta li{
@@ -113,34 +115,3 @@
     display: none;
 }
 
-
-.sec4 .hodnotenie{
-    font-size: clamp(50px, 6vw, 120px);
-    text-align: center;
-    /* border: 1px solid green; */
-    color: rgb(186, 186, 186);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);  
-    margin-bottom: 40px;  
-    /* background-color: rgb(2, 177, 130); */
-    width: 90%;
-    border: 2px solid #1d1d1d;
-}
-
-.h_html{
-    background: linear-gradient(90deg, rgb(2, 177, 130) 80%, rgb(65, 64, 64) 80%);
-}
-.h_css{
-    background: linear-gradient(90deg, rgb(2, 177, 130) 70%, rgb(65, 64, 64)70%);
-}
-.h_js{
-    background: linear-gradient(90deg, rgb(2, 177, 130) 10%, rgb(65, 64, 64) 10%);
-}
-.h_py{
-    background: linear-gradient(90deg, rgb(2, 177, 130) 50%, rgb(65, 64, 64) 50%);
-}
-.h_github{
-    background: linear-gradient(90deg, rgb(2, 177, 130) 10%, rgb(65, 64, 64) 10%);
-}

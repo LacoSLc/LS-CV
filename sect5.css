@@ -11,7 +11,7 @@
 }
 
 .podkarta{
-    width: 70vw;
+    width: clamp(350px, 70vw, 2000px);
     height: 70vh;
     position: relative;
     display: flex;
@@ -22,15 +22,15 @@
 .gulaL{
     width: 150px;
     height: 150px;
-    background-color: rgb(252, 86, 180);
+    background-color: rgb(0, 210, 154);
     border-radius: 100%;
     position: absolute;
     left: -65px;
     top: -65px;
-    box-shadow: 0 0 5px rgb(252, 86, 180),
-        0 0 10px rgb(252, 86, 180),
-        0 0 30px rgb(252, 86, 180),
-        0 0 60px rgb(252, 86, 180);
+    box-shadow: 0 0 5px rgb(0, 210, 154),
+        0 0 10px rgb(0, 210, 154),
+        0 0 30px rgb(0, 210, 154),
+        0 0 60px rgb(0, 210, 154);
 
     animation: move1 5s infinite linear;
 }

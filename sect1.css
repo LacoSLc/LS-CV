@@ -211,12 +211,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1000px 0 0 1000px;
+    border-radius: 1000px;
     animation: pozadie 1s both;
     animation-delay: 2.5s;
+    overflow: hidden;
 
     background: rgb(0,0,0);
-    background: linear-gradient(148deg, rgb(28, 28, 28) 50%, rgb(0,27, 22) 60%, rgb(0, 56, 46) 70%, rgb(0, 77, 63) 80%, rgb(0,94, 74) 90%, rgb(0,130, 119) 100%);
+    background: linear-gradient(148deg, rgb(28, 28, 28) 30%, rgb(0, 37, 30) 50%, rgb(0, 56, 46) 70%, rgb(0, 87, 71) 90%, rgb(0, 102, 80) 100%, rgb(0,130, 119) 100%);
 }
 
 @keyframes pozadie{

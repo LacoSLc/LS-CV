@@ -49,6 +49,25 @@ body{
     scale: 1.7;
 }
 
+.sideNavi a::after{
+    content: attr(data-title);
+    position: absolute;
+    background-color: #292929;
+    color: ghostwhite;
+    font-size: clamp(9px, .2vw, 35px);
+    top: -25px;
+    padding: 3px;
+    border-radius: 4px;
+    transition: 300ms;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    right: 0%;
+    margin-right: 20px;
+}
+.sideNavi a:hover::after{
+    opacity: 1;
+}
 @media screen and (max-width:779px){
     .sideNavi a{
         display: none;
