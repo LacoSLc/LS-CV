@@ -46,6 +46,7 @@
     transition: .4s all;
     position: relative;
     top: 7px;
+    height: 32%;
 }
 
 .sec1 a:hover{
@@ -89,6 +90,7 @@
     text-align: end;
     position: relative;
     align-items: top;
+
 }
 
 /* MAIN */
@@ -250,6 +252,8 @@
         cursor: pointer;
         margin-right: 3vw;
         align-items: top;
+        position: relative;
+        top: 2px;
     }
     .hamburger #closeHam {
         display: none;
@@ -261,25 +265,58 @@
         position: absolute;
         right: 0;
         background-color: rgb(28, 28, 28);
-        width: 100vw;
+        width: 80vw;
+        height: 94vh;
         z-index: 1;
         min-height: 200px;
         align-items: center;
-        justify-content: center;
+        /* justify-content: space-evenly; */
         gap: 10px;
-        top: clamp(30px, 5vw, 40px);
+        top: clamp(35px, 7vw, 40px);
+        translate: all 1s both;
+        /* border: 1px solid red; */
+        opacity: .95;
     }
     .sec1 .navi a{
         padding: 0px; margin:0;color: black;font-weight: bold;
         text-align: center;
         color: white;
-        animation: none;
+        /* animation: none; */
         background-color:rgb(0, 199, 146);
-        width: 10rem;
+        width: 15rem;
         border-radius: 5px;
         color:rgb(28, 28, 28);
         box-shadow:2px 3px 2px rgb(183, 183, 183);
+        height: 30px;
+        opacity: 1;
     }
+
+    .a1{
+        animation: slide5 .6s both;
+        animation-delay: .25s;
+    }
+    
+    .a2{
+        animation: slide5 .6s both;
+        animation-delay: .35s;
+    
+    }
+    .a3{
+        animation: slide5 .6s both;
+        animation-delay: .45s;
+     }
+    
+     .a4{
+        animation: slide5 .6s both;
+        animation-delay: .55s;
+     }
+
+    
+    @keyframes slide5{
+        from {transform: translatex(200px); opacity: 0;}
+        to {transform: translatex(0px);}
+    }
+
     .ico{
         margin-top: 20px;
     }
