@@ -2,7 +2,7 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,24 +35,24 @@
     background-color: rgb(0, 210, 154);
     color: black;
     display: inline-block;
-    padding: 2px 5px;
+    padding: 2px 9px;
     position: relative;
     top: -20px;
     left: 10px;
-    border-radius: 4px;
-    font-size:clamp(25px, 1.5vw, 45px)
+    border-radius: 10px;
+    font-size:clamp(25px, 2vw, 45px)
 }
 
 .sec2 h2{
     margin-bottom: 3px;
     color: white;
     text-decoration: underline;
-    font-size:clamp(20px, 1vw, 40px)
+    font-size:clamp(20px, 1.3vw, 40px)
 
 }
 
 .sec2 p{
-    font-size:clamp(15px, .5vw, 35px)
+    font-size:clamp(15px, .7vw, 35px)
 }
 
 /* SCALE BLUR EFFECT */

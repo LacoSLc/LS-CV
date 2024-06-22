@@ -86,39 +86,44 @@ closer3.addEventListener('click', () => galleryEventD("none", "none", "block"));
 
 // SECTION 4 
 
-// let btn = document.querySelector('.bttn');
-
-// function toggle() {
-//   btn.classList.toggle('active');
-// }
-
-// btn.addEventListener('click', toggle);
-
-
-// ---------------------------------------------------------------------------
 let links = document.querySelectorAll(".bttn");
 
-// loop through all the links
 links.forEach(l => {
-  // add click listeners
+
   l.addEventListener("click", (e) => {
     e.preventDefault();
     let currentTab = document.querySelector(`.wrappPer${l.href.substr(l.href.indexOf("#"))}`);
     
     if(currentTab.classList.contains("hide")){
-      // add hide class to all the tab content
+
       document.querySelectorAll(".wrappPer").forEach(t => {
         t.classList.add("hide");
       });
-      // remove hide class from the tab content which's id matches with the current href
+
       currentTab.classList.remove("hide");
     }else{
-     // add hide class to all the tab content
       document.querySelectorAll(".wrappPer").forEach(t => {
         t.classList.add("hide");
       });
     }
   })
 })
+
+var btnContainer = document.getElementById("h2wrapp");
+
+var btns = btnContainer.getElementsByClassName("bttn");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    this.className += " active";
+  });
+}
+
 
 

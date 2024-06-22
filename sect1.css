@@ -2,10 +2,12 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 /* HEADER */
@@ -33,7 +35,7 @@
     color: rgb(255, 255, 255); 
     margin-left: 3.5vw;
     animation: slide .6s both;
-    animation-delay: .1s;
+    animation-delay: .05s;
     font-size: clamp(25px, 2.5vw, 80px);
     letter-spacing: 2px;
     margin-right: 10px;
@@ -56,26 +58,26 @@
 
 .a1{
     animation: slide .6s both;
-    animation-delay: .25s;
+    animation-delay: .15s;
 }
 
 .a2{
     animation: slide .6s both;
-    animation-delay: .35s;
+    animation-delay: .20s;
 
 }
 .a3{
     animation: slide .6s both;
-    animation-delay: .45s;
+    animation-delay: .25s;
  }
 
  .a4{
     animation: slide .6s both;
-    animation-delay: .55s;
+    animation-delay: .305s;
  }
 
 @keyframes slide{
-    from {transform: translatey(-200px); opacity: 0;}
+    from {transform: translatey(-20px); opacity: 0;}
     to {transform: translatey(0px);}
 }
 
@@ -86,7 +88,7 @@
     color: white;
     align-items: center;
     animation: slide .6s both;
-    animation-delay: .2s;
+    animation-delay: .1s;
     text-align: end;
     position: relative;
     align-items: top;
@@ -120,14 +122,14 @@
 
 .meno{
     color: rgb(21, 21, 21);
-    font-size: clamp(20px, 1.7vw, 50px);
+    font-size: clamp(20px, 2vw, 60px);
     background-color: rgb(0, 210, 154);
     border-radius: 10px;
     font-weight: bold;
-    padding:0 10px;
+    padding:2px 10px;
     display: inline-block;
     animation: slide2 .7s both;
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 
 .adresa, .mail, .tel{
@@ -139,15 +141,15 @@
     margin-top: 20px;
     font-size: clamp(15px,1.5vw, 40px);
     animation: slide2 .6s both;
-    animation-delay: 1.2s; 
+    animation-delay: .6s; 
 }
 
 .mail{
     color: white;
     margin-top: 20px;
-    font-size: clamp(15px, 1.7vw, 35px); 
+    font-size: clamp(15px, 1.5vw, 40px); 
     animation: slide2 .6s both;
-    animation-delay: 1.4s; 
+    animation-delay: .7s; 
 }
 
 .tel{
@@ -155,11 +157,11 @@
     margin-top:20px;
     font-size: clamp(15px,1.5vw, 40px);
     animation: slide2 .6s both;
-    animation-delay: 1.6s; 
+    animation-delay: .8s; 
 }
 
 @keyframes slide2{
-    from {transform: translatex(-200px); opacity: 0;}
+    from {transform: translatex(-20px); opacity: 0;}
     to {transform: translatex(0px);}
 }
 
@@ -170,7 +172,7 @@
     display: inline-block;
     color: #ffffff;
     animation: slide3 .4s both;
-    animation-delay: 2s;
+    animation-delay: 1s;
     margin-top: 40px;
     margin-right:43px;
 }
@@ -180,7 +182,7 @@
     display:inline-block;
     color: #ffffff;
     animation: slide3 .4s both;
-    animation-delay: 2.2s;
+    animation-delay: 1.1s;
     margin-top: 40px;
 }
 
@@ -190,7 +192,7 @@
     background-color: rgb(0, 210, 154);
     border-radius: 6px;
     font-weight: bold;
-    padding:0 10px;
+    padding:2px 10px;
     display: inline-block;
     color: black;
 }
@@ -200,7 +202,7 @@
 }
 
 @keyframes slide3{
-    from {transform: translatey(200px); opacity: 0;}
+    from {transform: translatey(20px); opacity: 0;}
     to {transform: translatey(0px);}
 }
 
@@ -215,7 +217,7 @@
     justify-content: center;
     border-radius: 1000px;
     animation: pozadie 1s both;
-    animation-delay: 2.5s;
+    animation-delay: 1.25s;
     overflow: hidden;
 
     background: rgb(0,0,0);
@@ -232,11 +234,11 @@
     width: 22.5vw;
     max-width: 720px;
     animation: bl 1s both;
-    animation-delay: 2.7s;
+    animation-delay: 1.35s;
 }
 
 @keyframes bl{
-  from{filter: blur(0px); opacity: 0;transform: translatey(200px)}
+  from{filter: blur(0px); opacity: 0;transform: translatey(20px)}
   to{filter: blur(0px); opacity: 1;}
 }
 
@@ -255,7 +257,7 @@
         align-items: top;
         position: relative;
     }
-    .hamburger #closeHam {
+    #closeHam {
         display: none;
     }
     .sec1 .navi {
@@ -267,14 +269,12 @@
         top: 50px;
         background-color: rgba(33, 33, 33, 0.98);
         z-index: 1;
-        translate: all 1s both;
         height: calc(100vh - 50px);
         width: 80vw;
         align-items: center;
         justify-content: center;
         gap: 40px;
         border-radius: 20px 0 0 20px;
-        /* padding-top: 100px; */
     }
     .sec1 .navi a{
         padding: 0px; margin:0;
@@ -315,7 +315,7 @@
 
     
     @keyframes slide5{
-        from {transform: translatex(200px); opacity: 0;}
+        from {transform: translatex(20px); opacity: 0;}
         to {transform: translatex(0px);}
     }
 
