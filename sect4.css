@@ -47,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8vw;
+    gap: clamp(10px, 8vw, 90px);
 }
 
 #h2wrapp{
@@ -61,8 +61,8 @@
     font-size: clamp(13px, 1.3vw, 40px);
     color: ghostwhite;
     display: flex;
-    width: clamp(90px, 20vw, 230px);
-    min-width: 50px;
+    width: 16vw;
+    max-width:400px;
     /* text-align: center; */
     text-decoration: none;
     border: 1px solid rgb(0, 210, 154);
@@ -84,15 +84,6 @@
                 0px 0px 4px rgb(31, 182, 142), 
                 0px 0px 4px rgb(37, 203, 159);
 }
-
-/* .active{
-    background-color: #2c2c2c;
-    color:rgb(0, 210, 154);
-    box-shadow: 0px 0px 4px rgb(2, 135, 100),
-                0px 0px 4px rgb(18, 170, 130), 
-                0px 0px 4px rgb(31, 182, 142), 
-                0px 0px 4px rgb(37, 203, 159);
-} */
 
 .percenta{
     width: 100%;
@@ -135,3 +126,22 @@
     color:rgb(0, 210, 154)
 }
 
+@media screen and (max-width:951.2px){
+    .sec4 main{
+        display: grid;
+        height: 100%;
+        gap: 2px;
+    }
+
+    .sec4 .p1{
+        bottom: -40px;
+    }
+
+    .percenta{
+        min-width: 90vw;
+        min-height: 260px;
+    }
+    .bttn{
+        width: 210px;
+    }
+}
