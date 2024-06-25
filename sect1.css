@@ -88,10 +88,11 @@
     color: white;
     align-items: center;
     animation: slide .6s both;
-    animation-delay: .1s;
+    animation-delay: .2s;
     text-align: end;
     position: relative;
     align-items: top;
+    bottom:2px;
 
 }
 
