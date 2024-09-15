@@ -48,12 +48,10 @@
     justify-content: center;
     align-items: center;
     gap: clamp(10px, 8vw, 90px);
-    border: 1px solid green;
 }
 
 #h2wrapp{
     height: 100%;
-    border: 1px solid red;
     display: grid;
     gap: 10px;
 
