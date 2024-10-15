@@ -88,11 +88,10 @@
     color: white;
     align-items: center;
     animation: slide .6s both;
-    animation-delay: .2s;
+    animation-delay: .1s;
     text-align: end;
     position: relative;
     align-items: top;
-    bottom:3px;
 
 }
 
@@ -123,11 +122,11 @@
 
 .meno{
     color: rgb(21, 21, 21);
-    font-size: clamp(20px, 2vw, 60px);
+    font-size: clamp(20px, 2.2vw, 60px);
     background-color: rgb(0, 210, 154);
     border-radius: 10px;
     font-weight: bold;
-    padding:2px 10px;
+    padding:5px 10px 4px 10px;
     display: inline-block;
     animation: slide2 .7s both;
     animation-delay: .5s;
@@ -211,7 +210,7 @@
 
 .fotka{
     width: 35vw;
-    min-width: 350px;
+    min-width: 320px;
     max-width: 800px;
     display: flex;
     align-items: center;
@@ -231,7 +230,7 @@
 }
 
 .mojaFotka{
-    min-width: 255px;
+    min-width: 235px;
     width: 22.5vw;
     max-width: 720px;
     animation: bl 1s both;
@@ -270,7 +269,7 @@
         top: 50px;
         background-color: rgba(33, 33, 33, 0.98);
         z-index: 1;
-        min-height: 95vh;
+        height: 95vh;
         width: 100vw;
         align-items: center;
         justify-content: center;
