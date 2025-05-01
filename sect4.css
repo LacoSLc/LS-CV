@@ -105,6 +105,7 @@
     margin-left: clamp(30px, 3.8vw, 60px);
     font-size: clamp(16px, 1.8vw, 40px);
     font-weight: bold;
+    transition: 1s all;
 }
 
 .percenta li{
@@ -122,7 +123,7 @@
 .hide{
     display: none;
     background-color: #2c2c2c;
-    color:rgb(0, 210, 154)
+    color:rgb(0, 210, 154);
 }
 
 @media screen and (max-width:951.2px){
