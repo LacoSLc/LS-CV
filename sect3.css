@@ -67,7 +67,6 @@
     gap: 3vw;
     align-items: center;
     justify-content: center;
-
 }
 
 .fotoback{
@@ -288,9 +287,6 @@
 }
 
 
-
-
-
 /* MEDIA responsive */
 
 @media screen and (max-width:951.2px){
@@ -320,3 +316,5 @@
         width: 340px;
     }
 }
+
+
