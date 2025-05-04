@@ -167,6 +167,10 @@
     width:100%;
 }
 
+.fotoback:hover .triBodky{
+    opacity:0;
+}
+
 .layout button:hover{
     background-color: rgb(0, 210, 154);
     cursor: pointer;;
