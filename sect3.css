@@ -87,6 +87,7 @@
 
 /* LAYOUT */
 
+
 .layout{
     position: relative;
     bottom: 0px;
@@ -106,6 +107,8 @@
     opacity: .9;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    position: relative;
+    left: -5px;
 }
 .layoutWrap{
     width: 270px;
@@ -131,6 +134,7 @@
     position: relative; 
     top: -280px;
     font-weight: bold;
+    transition: 1.2s ease;
 }
 
 .layout button{
@@ -165,6 +169,11 @@
 
 .fotoback:hover img{
     width:100%;
+}
+
+.fotoback:hover .triBodky{
+    opacity: 0;
+    transition: .2s all;
 }
 
 .layout button:hover{
@@ -302,6 +311,7 @@
     }
     .fotoWrapper{
         padding-bottom: 30px;
+        gap: 0;
     }
     .sec3 main{
         min-height: 100vh;
