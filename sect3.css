@@ -173,7 +173,7 @@
 
 .fotoback:hover .triBodky{
     opacity: 0;
-    transition: .2s all;
+    transition: .4s all;
 }
 
 .layout button:hover{

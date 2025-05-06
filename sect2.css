@@ -52,7 +52,8 @@
 }
 
 .sec2 p{
-    font-size:clamp(15px, .7vw, 35px)
+    font-size:clamp(15px, .7vw, 35px);
+    font-weight: 500;
 }
 
 /* SCALE BLUR EFFECT */

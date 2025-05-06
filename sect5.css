@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 0;
     width: min(100%, 3000px);
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgb(28, 28, 28);
     display: flex;
     justify-content: center;
@@ -11,46 +11,57 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.tab_contact{
+.sec5 .contactBox{
+    /* width: clamp(200px, 80vw, 3000px); */
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
-    width: 70vw;
-    height: 70vh;
-    max-width: 1000px;
-    border: 1px solid rgb(40, 203, 160);
-    background-color: #2c2c2c;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px rgb(2, 135, 100),
-                0px 0px 12px rgb(18, 170, 130), 
-                0px 0px 24px rgb(31, 182, 142), 
-                0px 0px 48px rgb(37, 203, 159);
+    flex-wrap: wrap;
 }
 
-.foto_face{
-    width: clamp(150px,17vw,200px);
-    height: clamp(150px,17vw,200px);
-    left: 30px;
-    top: 30px;
-    position: absolute;
-    border-radius: 100%;
-    border: 1px solid white;
+.motivation, .contactBoxsmall{
+    width: 48%;
+    /* height: 98%; */
+    width: clamp(350px, 38vw, 1000px);
 }
 
-.downloadCV{
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    border: 1px solid white;
-    bottom: 0;
-    left: 30px;
-    bottom: 40px;
-    border-radius: 10px;
+.motivation{
+    padding: 40px 40px;
+    text-align: center;
+    font-size: clamp(12px,1vw,20px);
+    
 }
 
-.tabulka_contact{
-    position: absolute;
-    width: 500px;
-    height: 400px;
-    border: 1px solid white;
-    right: 30px;
-    top: 30px;
+.motivation p, h1{
+    color: ghostwhite;
+}
+
+.motivation h1{
+    margin-bottom: 30px;
+}
+
+.contactBoxsmall{
+    position: relative;
+    display: block;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.avatar{
+    width: clamp(100px, 25vw, 200px);
+    margin-bottom: 1vh;
+    position: relative;
+}
+
+.avatarbut{
+    width: clamp(50px, 30vw, 200px);
+    height: 30px;
+}
+
+.avatarImage{
+    width:100%;
 }
