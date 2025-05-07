@@ -97,4 +97,10 @@
     .butbox{
         margin-bottom: 30px;
     }
+    .motivation{
+        padding: 20px 10px;
+    }
+    .sec5 .contactBox{
+        max-width: 80vw;
+    }
 }
