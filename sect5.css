@@ -2,36 +2,36 @@
     margin: 0 auto;
     padding: 0;
     width: min(100%, 3000px);
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(28, 28, 28);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
 }
 
 .sec5 .contactBox{
-    /* width: clamp(200px, 80vw, 3000px); */
-    height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .motivation, .contactBoxsmall{
     width: 48%;
-    /* height: 98%; */
     width: clamp(350px, 38vw, 1000px);
+    border: 1px solid red;
 }
 
 .motivation{
     padding: 40px 40px;
     text-align: center;
-    font-size: clamp(12px,1vw,20px);
+    font-size: clamp(9px,1vw,20px);
     
 }
 
@@ -45,24 +45,39 @@
 
 .contactBoxsmall{
     position: relative;
-    display: block;
     align-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.avatar{
-    width: clamp(100px, 25vw, 200px);
-    margin-bottom: 1vh;
+.but{
+    border-radius: 999px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: ghostwhite;
+    border: 2px solid rgb(0, 185, 136);
+    transition: .4s ease;
+    font-weight: bold;
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: clamp(15px,1vw,20px);
+    padding: 25px 40px;
     position: relative;
 }
 
-.avatarbut{
-    width: clamp(50px, 30vw, 200px);
-    height: 30px;
+.but:hover{ 
+    background-color: rgb(0, 210, 154);
+    cursor: pointer;;
+    transition:.4s ease;
+    box-shadow: 0px 0px 4px rgb(2, 135, 100),
+                0px 0px 4px rgb(18, 170, 130), 
+                0px 0px 4px rgb(31, 182, 142), 
+                0px 0px 4px rgb(37, 203, 159);
 }
 
-.avatarImage{
-    width:100%;
+@media screen and (max-width:951.2px){
+    .sec5 .but{
+        top: 40px;
+    }
 }
