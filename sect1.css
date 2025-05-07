@@ -254,8 +254,8 @@
         display: inline-block;
         cursor: pointer;
         margin-right: 3vw;
-        align-items: top;
         position: relative;
+        top: -4px;
     }
     #closeHam {
         display: none;
