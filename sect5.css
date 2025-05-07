@@ -41,6 +41,7 @@
 
 .motivation h1{
     margin-bottom: 30px;
+    font-size: clamp(14px,1.2vw,25px);
 }
 
 .contactBoxsmall{
