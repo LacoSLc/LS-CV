@@ -21,7 +21,7 @@
     border: 2px solid white;
     border-radius: 10px;
     background-color: #2c2c2c;
-    max-width: 80vw;
+    max-width: 90vw;
 }
 
 .motivation, .contactBoxsmall{
@@ -30,7 +30,7 @@
 }
 
 .motivation{
-    padding: 40px 40px;
+    padding: 20px 30px;
     text-align: center;
     font-size: clamp(11px,1vw,20px);
 }
@@ -41,7 +41,7 @@
 
 .motivation h1{
     margin-bottom: 30px;
-    font-size: clamp(14px,1.2vw,25px);
+    font-size: clamp(14px,1.1vw,24px);
 }
 
 .contactBoxsmall{
