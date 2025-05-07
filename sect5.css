@@ -19,6 +19,7 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .motivation, .contactBoxsmall{
