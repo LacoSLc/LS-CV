@@ -3,11 +3,9 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     background-color: rgb(28, 28, 28);
-    /* font-family: 'Monoton'; */
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
-    /* padding-top: 80px; */
-    display: grid;
+    padding-top: 50px;
 }
 
 @font-face {
@@ -45,7 +43,7 @@
     margin: 0 auto;
     margin-top: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: clamp(10px, 8vw, 90px);
 }
@@ -54,7 +52,6 @@
     height: 80%;
     display: grid;
     gap: 10px;
-
 }
 
 .bttn{
@@ -127,10 +124,13 @@
 }
 
 @media screen and (max-width:951.2px){
+    .sec4{
+        padding-top: 0px;
+    }
     .sec4 main{
         display: grid;
         height: 100%;
-        gap: 2px;
+        gap: 30px;
     }
 
     .sec4 .p1{
