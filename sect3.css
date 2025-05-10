@@ -3,8 +3,7 @@
     width: min(100%, 5127px);
     min-height: 100vh;
     /* padding-top: 40px; */
-    background: #1C1C1C;
-    background: linear-gradient(30deg,rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 70%, rgba(13, 123, 94, 1) 91%, rgba(0, 210, 154, 1) 100%);
+    background-color: rgb(28, 28, 28);
 }
 
 /* HEADER */

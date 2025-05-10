@@ -2,8 +2,7 @@
     margin: 0;padding: 0;
     width: min(100%, 3000px);
     min-height: 100vh;
-    background: #1C1C1C;
-    background: linear-gradient(210deg,rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 70%, rgba(13, 123, 94, 1) 91%, rgba(0, 210, 154, 1) 100%);
+    background-color: rgb(28, 28, 28);
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
     padding-top: 50px;
@@ -21,7 +20,6 @@
     text-align: center;
     width: calc(100% - 10px);
     display: block;
-    /* border: 2px solid red; */
     place-content: end;
     position: relative;
     bottom: 30px;
