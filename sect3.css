@@ -2,14 +2,16 @@
     position: relative;
     width: min(100%, 5127px);
     min-height: 100vh;
-    background-color: rgb(28, 28, 28);
-    padding-top: 40px;
+    /* padding-top: 40px; */
+    background: #1C1C1C;
+    background: linear-gradient(30deg,rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 70%, rgba(13, 123, 94, 1) 91%, rgba(0, 210, 154, 1) 100%);
 }
 
 /* HEADER */
 
 .sec3 header{
     max-width: 2000px;
+    padding-top: 40px;
 }
 
 
@@ -315,6 +317,9 @@
     }
     .sec3 main{
         min-height: 100vh;
+    }
+    .sec3 header{
+        padding-top: 0px;
     }
     .sec3{
         padding-top: 0px;

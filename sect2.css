@@ -1,8 +1,8 @@
 .sec2{
     width: min(100%, 3000px);
     min-height: 100vh;
-    background-color: rgb(28, 28, 28);
-    font-family: 'Courier New', Courier, monospace;
+    background: #1C1C1C;
+    background: linear-gradient(150deg,rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 70%, rgba(13, 123, 94, 1) 91%, rgba(0, 210, 154, 1) 100%);    font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     justify-content: center;

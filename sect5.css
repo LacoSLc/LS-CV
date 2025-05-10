@@ -1,31 +1,26 @@
 .sec5{
-    margin: 0 auto;
-    padding: 0;
-    width: min(100%, 3000px);
-    min-height: 100vh;
-    background-color: rgb(28, 28, 28);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+  padding: 0;
+  width: min(100%, 3000px);
+  min-height: 100vh;
+  background: #1C1C1C;
+  background: linear-gradient(330deg,rgba(28, 28, 28, 1) 0%, rgba(28, 28, 28, 1) 70%, rgba(13, 123, 94, 1) 91%, rgba(0, 210, 154, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .sec5 .contactBox{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    flex-wrap: wrap;
-    max-width: 90vw;
-    /* border: 2px solid white;
-    border-radius: 10px;
-    background-color: #2c2c2c;
-    box-shadow: 1px 0px 4px rgb(1, 84, 61),
-                1px 0px 8px rgb(16, 154, 117), 
-                1px 0px 16px rgb(26, 155, 121), 
-                1px 0px 25px rgb(32, 178, 139); */
-            }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 90vw;
+}
+  
 
 .motivation, .contactBoxsmall{
     width: 48%;
@@ -54,51 +49,32 @@
 }
 
 .contactBoxsmall{
-    display: flex;
+    display: grid;
     position: relative;
     align-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 15px;
 }
 
-.butbox{
-    width: 200px;
-    height: 70px;
+.downloadCV{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.but{
-    display: flex;
-    border-radius: 999px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: ghostwhite;
+    background-color: rgb(0, 185, 136);
     border: 2px solid rgb(0, 185, 136);
-    transition: .4s ease;
     font-weight: bold;
-    text-decoration: none;
     color: black;
     font-size: clamp(15px,1vw,20px);
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 40px;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
     
 }
 
-.but:hover{ 
-    background-color: rgb(0, 210, 154);
-    cursor: pointer;;
-    transition:.4s ease;
-    box-shadow: 0px 0px 4px rgb(2, 135, 100),
-                0px 0px 4px rgb(18, 170, 130), 
-                0px 0px 4px rgb(31, 182, 142), 
-                0px 0px 4px rgb(37, 203, 159);
-}
 
 @media screen and (max-width:951.2px){
     .butbox{
@@ -111,7 +87,6 @@
         max-width: 80vw;
     }
 }
-
 
 
 
@@ -725,21 +700,25 @@
   }
   .dl {
     --background: #FFFFFF;
-    --primary: #1F242D;
-    --border-radius: 3px;
+    --primary: #3f4144;
+    --border-radius: 8px;
     --square-size: 80px;
     --progress-color: linear-gradient(to right top, #00A7FC, #0070ED);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid white; */
+    height: 80px;
   }
+
   .dl .dl-box {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: var(--border-radius);
-    overflow: hidden;
+    /* overflow: hidden; */
     /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+    height: 80px;
   }
   .dl .dl-box .dl-button {
     width: 80px;
@@ -747,11 +726,21 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background: var(--primary);
+    background: rgb(72, 72, 72);
     align-items: center;
     cursor: pointer;
-    transition: width 0.2s ease-in 0.4s, height 0.2s ease-in 0.4s, background 0.2s ease-in 0.4s;
+    /* transition: width 0.2s ease-in 0.4s, height 0.2s ease-in 0.4s, background 0.2s ease-in 0.4s; */
+    border-radius: 10px;
+    transition: .4s all;
+
   }
+
+  .dl-box .dl-button:hover{
+    box-shadow: 0px 0px 10px rgb(0, 185, 136);
+    background-color: rgb(0, 185, 136);
+    transition: ease-in .2s;
+  }
+
   .dl .dl-box .dl-button .arrow {
     position: absolute;
     top: 33px;
@@ -886,13 +875,16 @@
     content: "0%";
   }
   .dl.run .dl-box {
-    height: 100%;
+    height: 80px;
   }
   .dl.run .dl-box .dl-button {
     width: var(--square-size);
-    height: var(--square-size);
+    height: 80px;
     background: var(--background);
     transition: width 0.2s ease-out 0.3s, height 0.2s ease-out 0.3s, background 0.2s ease-out 0.3s;
+    box-shadow: none;
+    border-radius: 10px 0 0 10px;
+    transition: 1s all;
   }
   .dl.run .dl-box .dl-button .arrow {
     background: var(--primary);
@@ -924,9 +916,9 @@
   }
   .dl.run .dl-box .dl-progress {
     width: var(--square-size);
-    height: var(--square-size);
+    height: 80px;
     transition: width 0.3s ease-in 0.7s, height 0.3s ease-in 0.7s;
-    background: bla;
+    background: rgb(46, 46, 46);
   }
   .dl.run .dl-box .dl-progress::after {
     top: 0px;
@@ -1102,5 +1094,13 @@
     }
     100% {
       stroke-dashoffset: 200;
+    }
+  }
+
+  @media screen and (max-width:951.2px){
+    .dl-box .dl-button:hover{
+      box-shadow: none;
+      background-color:rgb(72, 72, 72);
+      transition:none;
     }
   }
