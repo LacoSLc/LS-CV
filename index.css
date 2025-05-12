@@ -4,8 +4,11 @@
 }
 
 body{
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(13, 13, 16);
 }
+ .sec1, .sec2, .sec3, .sec4, .sec5{
+    background-color: rgb(10, 10, 12);
+ }
 
 .sideNavi{
     position: fixed;
@@ -28,7 +31,7 @@ body{
     text-decoration: none;
     cursor: pointer;
     transition: .5s all;
-    box-shadow:0 0 3px rgb(0, 210, 154);
+    box-shadow:0 0 3px rgb(39, 174, 149);
     position: relative;
     border-radius: 3px;
 }
@@ -36,16 +39,16 @@ body{
 .sideNavi a:hover{
     transition: .5s all;
     background-color: white;
-    box-shadow: 0px 0px 10px rgb(0, 210, 154);
-    background-color: rgb(0, 210, 154);
+    box-shadow: 0px 0px 10px rgb(32, 154, 138);
+    background-color: rgb(41, 164, 146);
     scale: 1.7;
 }
 
 .sideNavi a:active{
     transition: .5s all;
     background-color: white;
-    box-shadow: 0px 0px 10px rgb(0, 210, 154);
-    background-color: rgb(0, 210, 154);
+    box-shadow: 0px 0px 10px rgb(0, 210, 182);
+    background-color: rgb(0, 210, 179);
     scale: 1.7;
 }
 

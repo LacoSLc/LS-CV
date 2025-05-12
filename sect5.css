@@ -3,13 +3,14 @@
   padding: 0;
   width: min(100%, 3000px);
   min-height: 100vh;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(9, 9, 11);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
   overflow-y: visible;
+
 }
 
 .sec5 .contactBox{
@@ -23,56 +24,53 @@
   
 
 .motivation, .contactBoxsmall{
-    width: 48%;
-    width: clamp(350px, 38vw, 1000px);
+  width: 48%;
+  width: clamp(350px, 38vw, 1000px);
 }
 
 .motivation{
-    padding: 20px 30px;
-    text-align: center;
-    font-size: clamp(12px,1vw,20px);
-}
-
-.motivation p, h1{
-    color: ghostwhite;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: clamp(12px,1.1vw,20px);
+  color: rgb(255, 255, 255)
 }
 
 .motivation h1{
-    margin-bottom: 30px;
-    font-size: clamp(17px,1.3vw,27px);
-    background-color: rgb(0, 210, 154);
-    color: rgb(21, 21, 21);
-    border-radius: 10px;
-    display: inline-block;
-    padding: 5px 20px;
-    font-weight: bold;
+  margin-bottom: 30px;
+  font-size: clamp(17px,1.3vw,27px);
+  background: #0f7665;
+  background: linear-gradient(90deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgb(22, 75, 61) 100%);
+  color: rgb(230, 230, 230);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: bold;
 }
 
 .contactBoxsmall{
-    display: grid;
-    position: relative;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
+  display: grid;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
 }
 
 .downloadCV{
-    display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(0, 185, 136);
-    border: 2px solid rgb(0, 185, 136);
-    font-weight: bold;
-    color: black;
-    font-size: clamp(15px,1vw,20px);
-    position: relative;
-    width: 200px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  background: #0f766a;
+  background: linear-gradient(220deg,rgb(42, 155, 146) 0%, rgba(62, 163, 145, 1) 50%, rgb(21, 70, 63) 100%);
+  font-weight: bold;
+  color: rgb(230, 230, 230);
+  font-size: clamp(15px,1vw,20px);
+  position: relative;
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .glowBox{
@@ -766,8 +764,8 @@
   }
 
   .dl-box .dl-button:hover{
-    box-shadow: 0px 0px 10px rgb(0, 185, 136);
-    background-color: rgb(0, 185, 136);
+    box-shadow: 0px 0px 10px rgb(0, 185, 160);
+    background-color: rgb(0, 185, 160);
     transition: ease-in .2s;
   }
 

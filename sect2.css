@@ -1,11 +1,11 @@
 .sec2{
     width: min(100%, 3000px);
     min-height: 100vh;
-    background-color: rgb(28, 28, 28);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container2{
@@ -21,18 +21,22 @@
 
 .vzdelanie, .skusenosti, .jazyk{
     width: clamp(350px, 40vw, 1000px);
-    border: solid 1px rgb(0, 210, 154);
     border-radius: 10px;
-    color: ghostwhite;
+    color: rgb(230, 230, 230);
     padding: 0 20px 20px 20px;
-    background-color: #292929;
+    background-color: #171717da;
+
+    border:2px solid #1C1C1C;
+    border-image: linear-gradient(to right bottom,rgb(9, 73, 133) 0%,rgba(0, 210, 154, 1) 100%)2;
 }
+
 .vzdelanie{
     margin-bottom: 10%;
 }
 .container2 h1{
-    background-color: rgb(0, 210, 154);
-    color: black;
+    background: #0f7665;
+    background: linear-gradient(90deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgba(35, 117, 95, 1) 100%);
+    color: rgb(230, 230, 230);
     display: inline-block;
     padding: 2px 9px;
     position: relative;

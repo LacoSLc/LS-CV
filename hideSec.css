@@ -12,5 +12,6 @@
 .hideBox{
     width: 100px;
     height: 100px;
-    background-color: rgb(17, 152, 118);
+    background: #380466;
+    background: linear-gradient(150deg,rgba(56, 4, 102, 1) 0%, rgba(11, 104, 128, 1) 40%, rgba(0, 210, 154, 1) 100%);
 }
