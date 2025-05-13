@@ -35,7 +35,7 @@
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
-    font-size: clamp(25px, 2.5vw, 80px);
+    font-size: clamp(27px, 2.5vw, 80px);
     letter-spacing: 2px;
     margin-right: 10px;
     background-image:-webkit-linear-gradient(150deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
@@ -95,7 +95,7 @@
 
 .hamburger {
     display: none;
-    font-size: clamp(24px, 2.5vw, 80px);
+    font-size: clamp(25px, 2.5vw, 80px);
     font-weight: 800;
     color: white;
     align-items: center;
@@ -103,8 +103,7 @@
     animation-delay: .1s;
     text-align: end;
     position: relative;
-    align-items: top;
-    /* top: -2px; */
+    /* align-items: top; */
 }
 
 /* MAIN */
@@ -134,7 +133,7 @@
 
 .meno{
     color: rgb(230, 230, 230);
-    font-size: clamp(20px, 2.2vw, 60px);
+    font-size: clamp(18px, 2.2vw, 60px);
     background: #0f7665;
     background: linear-gradient(90deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgb(24, 80, 65) 100%);
     border-radius: 10px;
@@ -152,21 +151,21 @@
 
 .adresa{
     margin-top: 20px;
-    font-size: clamp(15px,1.5vw, 40px);
+    font-size: clamp(13px,1.5vw, 40px);
     animation: slide2 .6s both;
     animation-delay: .6s; 
 }
 
 .mail{
     margin-top: 20px;
-    font-size: clamp(15px, 1.5vw, 40px); 
+    font-size: clamp(13px, 1.5vw, 40px); 
     animation: slide2 .6s both;
     animation-delay: .7s; 
 }
 
 .tel{
     margin-top:20px;
-    font-size: clamp(15px,1.5vw, 40px);
+    font-size: clamp(13px,1.5vw, 40px);
     animation: slide2 .6s both;
     animation-delay: .8s; 
 }
@@ -199,7 +198,7 @@
 
 .ico :first-child,
 .dic :first-child{
-    font-size: clamp(10px, 1.3vw, 30px);
+    font-size: clamp(9px, 1.3vw, 30px);
     background: #0f7665;
     background: linear-gradient(220deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgb(24, 81, 66) 100%);
     border-radius: 6px;
@@ -211,7 +210,7 @@
 }
 .ico :last-child,
 .dic :last-child{
-    font-size: clamp(13px, 1.5vw, 25px);
+    font-size: clamp(12px, 1.5vw, 25px);
 }
 
 @keyframes slide3{
@@ -222,9 +221,10 @@
 /* FOTKA */
 
 .fotka{
-    width: 35vw;
+    /* width: 35vw;
     min-width: 320px;
-    max-width: 800px;
+    max-width: 800px; */
+    width: clamp(285px, 35vw, 800px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,9 +243,10 @@
 }
 
 .mojaFotka{
-    min-width: 235px;
+    /* min-width: 235px;
     width: 22.5vw;
-    max-width: 720px;
+    max-width: 720px; */
+    width: clamp(200px, 22.5vw, 720px);
     animation: bl 1s both;
     animation-delay: 1.35s;
 }
@@ -268,11 +269,12 @@
         cursor: pointer;
         margin-right: 3vw;
         position: relative;
-        top: -4px;
+        top: -4.5px;
     }
     #closeHam {
         display: none;
     }
+
     .sec1 .navi {
         margin: 0;padding: 0;
         display: none;
@@ -339,28 +341,28 @@
         margin-top: 20px;
     }
     .udaje{
-      margin-top: 20px;
       margin-bottom: 10px;
       padding-bottom: 0px;
       padding-left: 0px;
       display: flex;
-      justify-content: start;
-    }
-    .fotka{
-        margin-top: 0px;
-    }
-    .mojaFotka{
-        margin-top: 0px;
+      justify-content: center;
+      align-items: center;
     }
 
+    .fotka{
+        margin-top: 20px;
+    }
+    .mojaFotka{
+        margin-top: 20px;
+    }
     .sec1 .mainWrapper{
         position: relative;
-        display: grid;
-        align-items: end;
+        display: flex;
+        align-items: center;
         justify-content: center;
         min-height: 95vh;
     }
-    .sec1 main{
+    .sec1 main{ 
         align-items: center;
         justify-content: center;
         height: 100%;
@@ -369,6 +371,4 @@
     .adresa, .mail, .tel{
         margin-top: 10px;
     }
-
 }
-
