@@ -30,7 +30,7 @@
                 0px 0vw 150px rgb(126, 219, 194);
     margin-left: 100px;
     font-family: 'Monoton';
-    font-size: clamp(60px, 6vw, 120px) ;
+    font-size: clamp(55px, 6vw, 120px) ;
     font-weight: 200;
     /* z-index: 2; */
     display:block;
