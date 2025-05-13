@@ -2,7 +2,7 @@
     margin: 0;padding: 0;
     width: min(100%, 3000px);
     min-height: 100vh;
-    background-color: rgb(9, 9, 11);
+    /* background-color: rgb(9, 9, 11); */
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
     padding-top: 50px;
@@ -165,7 +165,7 @@
                 0 0 180px rgba(0, 160, 175, 0.701),
                 0 0 220px rgba(0, 160, 175, 0.701),
                 0 0 260px rgba(0, 160, 175, 0.701);
-    filter: blur(100px);
+    filter: blur(150px);
 }
 
 @media screen and (max-width:951.2px){
@@ -192,5 +192,9 @@
      
     #h2wrapp{
         margin-top: 20px;
+    }
+
+    .glowBox1{
+        left:200px;
     }
 }
