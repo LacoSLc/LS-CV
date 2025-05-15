@@ -29,7 +29,7 @@
     margin-right: 10px;
     height: 46%;
     background: #3434341c;
-    background: linear-gradient(90deg,#34343400 0%, #3434343f 50%, #3434348f 100%);
+    background: linear-gradient(90deg,#34343400 0%, #3434343f 50%, #34343465 100%);
     border-radius: 2px;
     z-index: 1;
 }
@@ -257,8 +257,8 @@
     border-radius: 20px 100px;
     transform: translate(0, 100px);
     filter: blur(150px);
-    top: -250px;
-    left: 1020px;
+    top: -300px;
+    right: -100px;
 
     box-shadow: 0 0 0px rgba(0, 160, 175, 0.701),
                 0 0 0px rgba(0, 160, 175, 0.701),
@@ -274,11 +274,7 @@
                 0 0 50px rgba(0, 160, 175, 0.701),
                 0 0 50px rgba(0, 160, 175, 0.701),
                 0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 100px rgba(0, 160, 175, 0.701),
-                0 0 120px rgba(0, 160, 175, 0.701),
-                0 0 150px rgba(0, 160, 175, 0.701),
-                0 0 180px rgba(0, 160, 175, 0.701),
-                0 0 200px rgba(0, 160, 175, 0.701);
+                0 0 100px rgba(0, 160, 175, 0.701);
 }
 
 @keyframes bl{
@@ -310,7 +306,7 @@
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 77px;
+        top: 70px;
         background-color: rgba(33, 33, 33, 0.98);
         z-index: 1;
         height: 91vh;

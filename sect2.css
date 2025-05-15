@@ -6,7 +6,6 @@
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
-    overflow-x: visible;
 }
 
 .container2{
@@ -83,12 +82,7 @@
               0 0 50px rgb(0, 175, 128),
               0 0 50px rgb(0, 175, 128),
               0 0 50px rgb(0, 175, 128),
-              0 0 100px rgb(0, 175, 128),
-              0 0 150px rgb(0, 175, 128),
-              0 0 200px rgb(0, 175, 128),
-              0 0 220px rgb(0, 175, 128),
-              0 0 250px rgb(0, 175, 128),
-              0 0 270px rgb(0, 175, 128);
+              0 0 100px rgb(0, 175, 128);
   filter: blur(100px);
 }
 
