@@ -2,7 +2,7 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
     position: relative;
     font-weight: bold;
@@ -29,7 +29,8 @@
     justify-content: space-evenly;
     margin-right: 10px;
     height: 46%;
-    background-color: #3434341c;
+    background: #3434341c;
+    background: linear-gradient(90deg,#34343400 0%, #3434343f 50%, #3434348f 100%);
     border-radius: 2px;
     z-index: 1;
 }
@@ -42,7 +43,7 @@
     font-size: clamp(28px, 2.6vw, 80px);
     /* letter-spacing: 2px; */
     margin-right: 10px;
-    background-image:-webkit-linear-gradient(150deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
+    background-image:-webkit-linear-gradient(300deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -99,15 +100,14 @@
 
 .hamburger {
     display: none;
-    font-size: clamp(23px, 2.5vw, 80px);
-    font-weight: 800;
+    font-size: clamp(30px, 2.5vw, 80px);
+    font-weight: 100;
     color: white;
     align-items: center;
     animation: slide .6s both;
     animation-delay: .1s;
     text-align: end;
     position: relative;
-    /* align-items: top; */
 }
 
 /* MAIN */
@@ -233,7 +233,7 @@
     overflow: hidden;
 
     background: #1C1C1C;
-    background: linear-gradient(40deg,rgba(50, 150, 123, 0.83) 0%,rgba(13, 52, 72, 0.718) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%);
+    background: linear-gradient(80deg,rgba(50, 150, 123, 0.355) 0%,rgba(13, 52, 72, 0.596) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%);
 }
 
 @keyframes pozadie{
@@ -249,17 +249,18 @@
 }
 
 .glowBox3{
-    /* width: 400px; */
     width: clamp(200px, 100rem, 500px);
-    /* height:600px; */
     height: clamp(400px, 2.5rem, 700px);
     background-color: rgb(0, 160, 175);
     position: absolute;
     opacity: .3;
     z-index: 0;
     border-radius: 20px 100px;
-    right: 200px;
     transform: translate(0, 100px);
+    filter: blur(150px);
+    top: -250px;
+    left: 1020px;
+
     box-shadow: 0 0 0px rgba(0, 160, 175, 0.701),
                 0 0 0px rgba(0, 160, 175, 0.701),
                 0 0 0px rgba(0, 160, 175, 0.701),
@@ -278,11 +279,7 @@
                 0 0 120px rgba(0, 160, 175, 0.701),
                 0 0 150px rgba(0, 160, 175, 0.701),
                 0 0 180px rgba(0, 160, 175, 0.701),
-                0 0 220px rgba(0, 160, 175, 0.701),
-                0 0 260px rgba(0, 160, 175, 0.701);
-    filter: blur(150px);
-    top: -500px;
-    left: 1200px;
+                0 0 200px rgba(0, 160, 175, 0.701);
 }
 
 @keyframes bl{
@@ -299,7 +296,7 @@
         cursor: pointer;
         margin-right: 3vw;
         position: relative;
-        top: -2px;
+        top: 8px;
     }
     #closeHam {
         display: none;
@@ -311,7 +308,7 @@
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 50px;
+        top: 70px;
         background-color: rgba(33, 33, 33, 0.98);
         z-index: 1;
         height: 95vh;
@@ -401,12 +398,13 @@
 
     .sec1 header{
         padding-top: 5px;
-        background-color: #7a7a7a0d;
+        background: #3434341c;
+        background: linear-gradient(90deg,#34343400 0%, #3434342c 50%, #34343471 100%);
     }
 
     .glowBox3{
         top: -200px;
-        left: -500px;
+        left: -400px;
     }
 }
 
