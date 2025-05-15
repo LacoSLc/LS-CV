@@ -29,7 +29,11 @@
   padding: 20px 30px;
   text-align: center;
   font-size: clamp(12px,1.1vw,20px);
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  border:2px solid #0f7665;
 }
 
 .motivation h1{
@@ -42,6 +46,11 @@
   display: inline-block;
   padding: 5px 20px;
   font-weight: bold;
+}
+
+.motivation p{
+  z-index: 2;
+  color:rgb(255, 255, 255) ;
 }
 
 .contactBoxsmall{
@@ -78,6 +87,7 @@
   opacity: .3;
   border-radius: 999px;
   top: 100px;
+  z-index: -1;
 
   box-shadow: 0 0 0px rgb(0, 175, 128),
               0 0 0px rgb(0, 175, 128),
@@ -108,7 +118,8 @@
         margin-bottom: 30px;
     }
     .motivation{
-        padding: 20px 10px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
     }
     .sec5 .contactBox{
         max-width: 80vw;

@@ -2,11 +2,10 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     font-family: 'Courier New', Courier, monospace;
-    /* overflow: hidden; */
     margin: 0 auto;
     position: relative;
     font-weight: bold;
-    /* padding-top: 10px; */
+    overflow: hidden;
 }
 
 /* HEADER */
@@ -40,7 +39,7 @@
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
-    font-size: clamp(28px, 2.6vw, 80px);
+    font-size: clamp(32px, 2.6vw, 80px);
     /* letter-spacing: 2px; */
     margin-right: 10px;
     background-image:-webkit-linear-gradient(300deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
@@ -292,11 +291,14 @@
 @media screen and (max-width:779px) {
     
     .hamburger {
-        display: inline-block;
+        display: flex;
         cursor: pointer;
         margin-right: 3vw;
         position: relative;
-        top: 8px;
+        /* top: 13px; */
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
     }
     #closeHam {
         display: none;
@@ -308,10 +310,10 @@
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 70px;
+        top: 77px;
         background-color: rgba(33, 33, 33, 0.98);
         z-index: 1;
-        height: 95vh;
+        height: 91vh;
         width: 100vw;
         align-items: center;
         justify-content: center;
@@ -397,9 +399,8 @@
     }
 
     .sec1 header{
-        padding-top: 5px;
         background: #3434341c;
-        background: linear-gradient(90deg,#34343400 0%, #3434342c 50%, #34343471 100%);
+        background: linear-gradient(90deg,#34343400 0%, #3434341f 50%, #34343471 100%);
     }
 
     .glowBox3{
