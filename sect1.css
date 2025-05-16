@@ -39,7 +39,7 @@
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
-    font-size: clamp(32px, 2.6vw, 80px);
+    font-size: clamp(32px, 2.7vw, 80px);
     /* letter-spacing: 2px; */
     margin-right: 10px;
     background-image:-webkit-linear-gradient(300deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
@@ -222,7 +222,7 @@
 /* FOTKA */
 
 .fotka{
-    width: clamp(250px, 30vw, 800px);
+    width: clamp(230px, 30vw, 800px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,7 +241,7 @@
 }
 
 .mojaFotka{
-    width: clamp(250px, 30vw, 800px);
+    width: clamp(230px, 30vw, 800px);
     animation: bl 1s both;
     animation-delay: .6s;
     backdrop-filter: blur(100px);
@@ -364,8 +364,7 @@
         align-items: center;
     }
     .udajeWrap{
-        margin: 0;
-        left: -35px;
+        left: 0;
     }
 
     .ico{

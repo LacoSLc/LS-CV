@@ -2,15 +2,12 @@
     position: relative;
     width: min(100%, 5127px);
     min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HEADER */
-
-.sec3 header{
-    max-width: 2000px;
-    padding-top: 40px;
-}
-
 
 @font-face {
     font-family: 'Monoton';
@@ -19,7 +16,7 @@
 
 .neon{
     color: rgb(20, 186, 172);
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     text-shadow:1px 0px 4px rgb(0, 78, 57),
                 1px 0px 4px rgb(18, 170, 130), 
                 1px 0px 4px rgb(31, 182, 142), 
@@ -28,7 +25,6 @@
                 0px 0px 15px rgb(61, 212, 172), 
                 0px 0px 125px rgb(86, 228, 191), 
                 0px 0vw 150px rgb(126, 219, 194);
-    margin-left: 100px;
     font-family: 'Monoton';
     font-size: clamp(55px, 6vw, 120px) ;
     font-weight: 200;
@@ -56,13 +52,11 @@
 /* MAIN */
 
 .sec3 main{
-    min-height: calc(90vh - 124px) ;
     display: flex;
 }
 
 .fotoWrapper{
     display: flex;
-    flex-wrap: wrap;
     gap: 3vw;
     align-items: center;
     justify-content: center;
@@ -299,10 +293,7 @@
 /* MEDIA responsive */
 
 @media screen and (max-width:951.2px){
-    .neon{
-        margin-left: 0px;
-        text-align: center;
-    }
+
     .fotoback{
         scale: .85;
     }
@@ -314,12 +305,10 @@
         gap: 0;
     }
     .sec3 main{
-        min-height: 100vh;
+        width: 100vw;
+        overflow: scroll;
     }
     .sec3 header{
-        padding-top: 0px;
-    }
-    .sec3{
         padding-top: 0px;
     }
     .box{
