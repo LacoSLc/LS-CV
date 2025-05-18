@@ -5,7 +5,7 @@
     margin: 0 auto;
     position: relative;
     font-weight: bold;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -35,12 +35,10 @@
 }
 
 .logo{
-    /* color: rgb(255, 255, 255);  */
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
     font-size: clamp(32px, 2.7vw, 80px);
-    /* letter-spacing: 2px; */
     margin-right: 10px;
     background-image:-webkit-linear-gradient(300deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
     -webkit-background-clip: text;
@@ -49,7 +47,7 @@
 
 .sec1 .navi a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(198, 198, 198);
     font-size: clamp(20px, 1.4vw, 45px);
     transition: .4s all;
     position: relative;
@@ -101,7 +99,7 @@
     display: none;
     font-size: clamp(30px, 2.5vw, 80px);
     font-weight: 100;
-    color: white;
+    color: rgb(198, 198, 198);
     align-items: center;
     animation: slide .6s both;
     animation-delay: .1s;
@@ -110,6 +108,7 @@
 }
 
 /* MAIN */
+
 /* UDAJE */
 .sec1 .mainWrapper{
     position: relative;
@@ -117,7 +116,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 86vh;
+    height: 86vh;
 }
 
 .sec1 main{
@@ -126,7 +125,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
 }
 
 .udajeWrap{
@@ -149,7 +148,7 @@
 
 .adresa, .mail, .tel{
     padding-left: 10px;
-    color: rgb(230, 230, 230);
+    color: rgb(198, 198, 198);
     font-size: clamp(18px,1.5vw, 40px);
 }
 
@@ -212,6 +211,7 @@
 .ico :last-child,
 .dic :last-child{
     font-size: clamp(15px, 1.5vw, 25px);
+    color: rgb(198, 198, 198)
 }
 
 @keyframes slide3{
@@ -222,17 +222,17 @@
 /* FOTKA */
 
 .fotka{
-    width: clamp(230px, 30vw, 800px);
+    width: clamp(300px, 30vw, 800px);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1000px;
+    /* border-radius: 1000px; */
     animation: pozadie 1s both;
     animation-delay: .5s;
     overflow: hidden;
 
-    background: #1C1C1C;
-    background: linear-gradient(80deg,rgba(50, 150, 123, 0.355) 0%,rgba(13, 52, 72, 0.596) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%);
+    /* background: #1C1C1C;
+    background: linear-gradient(80deg,rgba(50, 150, 123, 0.355) 0%,rgba(13, 52, 72, 0.596) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%); */
 }
 
 @keyframes pozadie{
@@ -241,10 +241,12 @@
 }
 
 .mojaFotka{
-    width: clamp(230px, 30vw, 800px);
+    width: clamp(300px, 30vw, 800px);
     animation: bl 1s both;
     animation-delay: .6s;
     backdrop-filter: blur(100px);
+    filter: sepia(100);
+    opacity: 0;
 }
 
 .glowBox3{
@@ -273,8 +275,7 @@
                 0 0 25px rgba(0, 160, 175, 0.701),
                 0 0 50px rgba(0, 160, 175, 0.701),
                 0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 100px rgba(0, 160, 175, 0.701);
+                0 0 50px rgba(0, 160, 175, 0.701);
 }
 
 @keyframes bl{
@@ -289,9 +290,9 @@
     .hamburger {
         display: flex;
         cursor: pointer;
-        margin-right: 3vw;
+        margin-right: 4vw;
         position: relative;
-        /* top: 13px; */
+        top: -2px;
         align-items: center;
         justify-content: center;
         font-weight: 100;
@@ -307,7 +308,8 @@
         position: absolute;
         right: 0;
         top: 70px;
-        background-color: rgba(33, 33, 33, 0.98);
+        background-color: rgba(0, 0, 0, 0.851);
+        opacity: 1;
         z-index: 1;
         height: 91vh;
         width: 100vw;
@@ -318,10 +320,8 @@
     }
     .sec1 .navi a{
         padding: 0px; margin:0;
-        color: black;
         font-weight: bold;
         text-align: center;
-        color: ghostwhite;
         background: #0f7665;
         background: linear-gradient(90deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgb(24, 80, 65) 100%);
         width: 15rem;
@@ -380,7 +380,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 95vh;
+        min-height: 89vh;
     }
 
     .sec1 main{ 

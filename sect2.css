@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container2{

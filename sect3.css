@@ -5,6 +5,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 /* HEADER */
@@ -52,7 +53,7 @@
 /* MAIN */
 
 .sec3 main{
-    display: flex;
+    display: grid;
 }
 
 .fotoWrapper{
@@ -89,7 +90,7 @@
     border-radius: 10px;
     background-color: black;
     transition:.4s ease;
-    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.744) 100%);
 }
 .layoutWrap .nadpis{
     background: #0f7665;
@@ -152,7 +153,7 @@
                 0px 0px 4px rgb(2, 135, 122), 
                 0px 0px 15px rgb(2, 135, 122), 
                 0px 0px 15px rgb(2, 135, 122), 
-                0px 0px 125px rgb(2, 135, 122);
+                0px 0px 50px rgb(2, 135, 122);
 }
 
 .fotoback:hover .layout{
@@ -293,24 +294,34 @@
 /* MEDIA responsive */
 
 @media screen and (max-width:951.2px){
-
-    .fotoback{
-        scale: .85;
-    }
-    .fotoback:hover{
-        scale: .95;
-    }
-    .fotoWrapper{
-        padding-bottom: 30px;
-        gap: 0;
-    }
-    .sec3 main{
-        width: 100vw;
-        overflow: scroll;
-    }
     .sec3 header{
         padding-top: 0px;
     }
+
+    .sec3 main{
+        display: grid;
+        width: 100vw;
+        overflow: scroll;
+        border:2px solid #0f7665;
+        box-shadow: 0 0 5px #0f7665,
+                    0 0 10px #0f7665;
+    }
+
+    .fotoWrapper{
+        overflow: visible;
+        background-color: rgba(50, 50, 50, 0.366);
+    }
+
+    .fotoback{
+        scale: .8;
+        margin: 10px 0;
+    }
+    .fotoback:hover{
+        scale: .9;
+    }
+
+
+    
     .box{
         width: 340px;
     }
