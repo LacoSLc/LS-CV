@@ -125,6 +125,7 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+// _____Donwload CV_____
 
 var $ = (s, o = document) => o.querySelector(s);
 
@@ -140,7 +141,7 @@ $(".dl").addEventListener("click", function() {
 // Side navigator
 
 let mainNavLinks = document.querySelectorAll(".sideLight");
-let mainSections = document.querySelectorAll("section");
+let mainSections = document.querySelectorAll(".secSide");
 
 let lastId;
 let cur = [];
@@ -161,8 +162,8 @@ window.addEventListener("scroll", event => {
     let section = document.querySelector(link.hash);
 
     if (
-      section.offsetTop <= fromTop  &&
-      section.offsetTop + section.offsetHeight > fromTop
+      section.offsetTop <= fromTop + 300  &&
+      section.offsetTop + section.offsetHeight - 300 > fromTop
     ) {
       link.classList.add("current");
     } else {

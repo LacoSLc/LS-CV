@@ -226,7 +226,7 @@
 /* FOTKA */
 
 .fotka{
-    width: clamp(240px, 31vw, 800px);
+    width: clamp(240px, 30vw, 800px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,6 +235,7 @@
     animation-delay: .5s;
     overflow: hidden;
     z-index: 1;
+    border: 2px solid rgba(62, 163, 145, 1);
 
     background-color: rgb(14, 14, 16);
     /* background: linear-gradient(240deg,rgba(50, 150, 123, 0.108) 0%,rgba(13, 52, 72, 0.103) 10%,rgba(12, 46, 37, 0.147) 40%,rgba(14, 14, 16, 0.13) 50%, rgba(14, 14, 16, 0.07) 100%); */
@@ -243,6 +244,7 @@
 .fotka:hover .mojaFotka2{
     opacity: 1;
     transition: .5s all;
+    filter: blur(0px);
 }
 
 .fotka:hover .mojaFotka{
@@ -256,26 +258,29 @@
 }
 
 .mojaFotka{
-    width: clamp(240px, 31vw, 800px);
+    width: clamp(240px, 28vw, 800px);
     /* animation: bl 1s both; */
     animation-delay: .6s;
     z-index: 3;
+    transition: .5s all;
 }
 
-.fotka .mojaFotka2 {
-    width: clamp(240px, 31vw, 800px);
+.mojaFotka2 {
+    width: clamp(240px, 28vw, 800px);
     /* animation: bl 1s both; */
     animation-delay: .6s;
     position: absolute;
     z-index: 2;
     opacity: 0;
+    transition: .5s all;
+    filter: blur(30px);
 }
 
 
 
 .glowBox3{
-    width: clamp(100px, 100rem, 500px);
-    height: clamp(200px, 5rem, 700px);
+    width: clamp(100px, 30vw, 500px);
+    height: clamp(200px, 40vh, 700px);
     background-color: rgb(0, 160, 175);
     position: absolute;
     opacity: .3;
@@ -318,7 +323,7 @@
         position: absolute;
         right: 0;
         top: 76px;
-        background-color: rgba(0, 0, 0, 0.933);
+        background-color: rgba(0, 0, 0, 0.86);
         opacity: 1;
         z-index: 1;
         height: 89vh;
@@ -327,6 +332,7 @@
         justify-content: center;
         gap: 40px;
         border-radius: 20px 0 0 20px;
+        z-index: 99;
     }
     .sec1 .navi a{
         padding: 0px; margin:0;
