@@ -21,7 +21,7 @@
   
 
 .motivation, .contactBoxsmall{
-  width: 48%;
+
   width: clamp(350px, 38vw, 1000px);
 }
 

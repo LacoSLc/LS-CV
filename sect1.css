@@ -8,6 +8,9 @@
     overflow-x: hidden;
 }
 
+@font-face { font-family: 'SpaceGrotesk-Bold'; 
+			 src: url('fonts/SpaceGrotesk-Regular.otf'); }
+
 /* HEADER */
 .sec1 .headerWrap{
     width: 100%;
@@ -38,12 +41,11 @@
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
-    font-size: clamp(32px, 2.7vw, 80px);
+    font-size: clamp(40px, 2.9vw, 150px);
     margin-right: 10px;
-    background-image:-webkit-linear-gradient(300deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
+    background-image:-webkit-linear-gradient(30deg,rgb(63, 160, 116) 0%, rgb(30, 133, 112) 50%, rgb(8, 74, 53) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
     font-weight: bold;
 }
 
@@ -299,6 +301,7 @@
     }
     #closeHam {
         display: none;
+        top: 0;
     }
 
     .sec1 .navi {
@@ -307,11 +310,11 @@
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 70px;
+        top: 89px;
         background-color: rgba(0, 0, 0, 0.851);
         opacity: 1;
         z-index: 1;
-        height: 91vh;
+        height: 89vh;
         width: 100vw;
         align-items: center;
         justify-content: center;
