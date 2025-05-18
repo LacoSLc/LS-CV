@@ -1,7 +1,7 @@
 .sec1{
     width: min(100%, 3000px);
     min-height: 100vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
     margin: 0 auto;
     position: relative;
     font-weight: bold;
@@ -43,6 +43,8 @@
     background-image:-webkit-linear-gradient(300deg,rgb(68, 193, 160) 0%, rgb(95, 198, 179) 50%, rgb(14, 78, 61) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+    font-weight: bold;
 }
 
 .sec1 .navi a{
@@ -222,17 +224,17 @@
 /* FOTKA */
 
 .fotka{
-    width: clamp(300px, 30vw, 800px);
+    width: clamp(250px, 30vw, 800px);
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-radius: 1000px; */
+    border-radius: 1000px;
     animation: pozadie 1s both;
     animation-delay: .5s;
     overflow: hidden;
 
-    /* background: #1C1C1C;
-    background: linear-gradient(80deg,rgba(50, 150, 123, 0.355) 0%,rgba(13, 52, 72, 0.596) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%); */
+    background: #1C1C1C;
+    background: linear-gradient(240deg,rgba(50, 150, 123, 0.355) 0%,rgba(13, 52, 72, 0.596) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%);
 }
 
 @keyframes pozadie{
@@ -241,12 +243,10 @@
 }
 
 .mojaFotka{
-    width: clamp(300px, 30vw, 800px);
+    width: clamp(250px, 30vw, 800px);
     animation: bl 1s both;
     animation-delay: .6s;
-    backdrop-filter: blur(100px);
-    filter: sepia(100);
-    opacity: 0;
+
 }
 
 .glowBox3{
@@ -396,6 +396,10 @@
     .sec1 header{
         background: #3434341c;
         background: linear-gradient(90deg,#34343400 0%, #3434341f 50%, #34343471 100%);
+    }
+
+    .fotka{
+        background: linear-gradient(70deg,rgba(50, 150, 123, 0.355) 0%,rgba(13, 52, 72, 0.596) 10%,rgba(12, 46, 37, 0.54) 40%,rgba(14, 14, 16, 0.436) 50%, rgba(14, 14, 16, 0.222) 100%)
     }
 
     .glowBox3{

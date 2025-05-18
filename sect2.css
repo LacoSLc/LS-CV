@@ -4,8 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+    font-weight: normal;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .container2{
@@ -50,13 +52,12 @@
     margin-bottom: 3px;
     color: rgb(230, 230, 230);
     text-decoration: underline;
-    font-size:clamp(20px, 1.3vw, 40px)
-
+    font-size:clamp(20px, 1.3vw, 40px);
 }
 
 .sec2 p{
     font-size:clamp(15px, .7vw, 35px);
-    font-weight: 500;
+    font-weight: 3;
 }
 
 .glowBox4{

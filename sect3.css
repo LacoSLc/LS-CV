@@ -6,11 +6,12 @@
     align-items: center;
     justify-content: center;
     overflow: visible;
+    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
 }
 
 /* HEADER */
 
-@font-face {
+/* @font-face {
     font-family: 'Monoton';
     src: url(fonts/Monoton-Regular.ttf) format("opentype");
 }
@@ -48,12 +49,33 @@
     20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
      opacity: 0.4;
     }
+} */
+
+.sec3 .p2{
+    color: ghostwhite;
+    font-size: clamp(30px ,2.5vw, 75px);
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.hobbies{
+    font-size: clamp(50px ,5vw, 130px);
+    background-image:-webkit-linear-gradient(140deg,rgb(28, 132, 138) 0%,rgb(35, 121, 168) 20%, rgb(48, 174, 151) 50%, rgb(11, 89, 68) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* MAIN */
 
 .sec3 main{
     display: grid;
+    border:2px solid #0f7665;
+    box-shadow: 0 0 5px #0f7665,
+                0 0 10px #0f7665;
+    padding: 20px 60px;
+    border-radius: 10px;
+    background-color: rgba(37, 37, 37, 0.267);
 }
 
 .fotoWrapper{
@@ -61,6 +83,7 @@
     gap: 3vw;
     align-items: center;
     justify-content: center;
+    background-color: rgba(37, 37, 37, 0.278);
 }
 
 .fotoback{
@@ -72,6 +95,7 @@
     place-items: center;
     box-shadow:0px 0px 5px rgb(0, 185, 136);
     transition: .4s ease;
+    background-color: rgba(37, 37, 37, 0.218);
 }
 
 .sec3 .fotoHob{
@@ -180,9 +204,7 @@
 
 /* GALLERY */
 
-/* FISHING */
-
-#wrapperFish{
+#wrapperFish, #wrapperArchery, #wrapperDrone{
     display: none;
     position: fixed;
     width: 100%;
@@ -221,7 +243,7 @@
     transition:all .5s;
 }
 
-#closer1{
+#closer1, #closer2, #closer3{
     background-color: transparent;
     font-size: 40px;
     border: none;
@@ -233,78 +255,19 @@
     width: 100%;
     text-shadow: 0 0 10px rgb(0, 210, 154);
 }
-
-/* ARCHERY */
-
-#wrapperArchery{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(28, 28, 28);
-    z-index: 999;
-    bottom: 0;
-    overflow: auto;
-}
-
-#closer2{
-    background-color: transparent;
-    font-size: 40px;
-    border: none;
-    color: white;
-    z-index: 4;
-    position: fixed;
-    top: 20px;
-    align-self: center;
-    width: 100%;
-    text-shadow: 0 0 10px rgb(0, 210, 154);
-}
-
-/* DRONE  */
-
-#wrapperDrone{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(28, 28, 28);
-    z-index: 999;
-    bottom: 0;
-    overflow: auto;
-}
-
-#closer3{
-    background-color: transparent;
-    font-size: 40px;
-    border: none;
-    color: white;
-    z-index: 4;
-    position: fixed;
-    top: 20px;
-    align-self: center;
-    width: 100%;
-    text-shadow: 0 0 10px rgb(0, 210, 154);
-}
-
 
 /* MEDIA responsive */
 
 @media screen and (max-width:951.2px){
-    .sec3 header{
-        padding-top: 0px;
-    }
 
     .sec3 main{
         display: grid;
-        width: 100vw;
+        width: 95vw;
         overflow: scroll;
         border:2px solid #0f7665;
         box-shadow: 0 0 5px #0f7665,
                     0 0 10px #0f7665;
+        padding: 0px;
     }
 
     .fotoWrapper{
@@ -313,11 +276,11 @@
     }
 
     .fotoback{
-        scale: .8;
+        scale: .85;
         margin: 10px 0;
     }
     .fotoback:hover{
-        scale: .9;
+        scale: .95;
     }
 
 
