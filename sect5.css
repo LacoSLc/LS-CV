@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .sec5 .contactBox{

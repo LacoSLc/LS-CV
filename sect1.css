@@ -1,7 +1,7 @@
 .sec1{
     width: min(100%, 3000px);
     min-height: 100vh;
-    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
     position: relative;
     font-weight: bold;

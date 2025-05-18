@@ -1,12 +1,12 @@
 .sec3{
     position: relative;
-    width: min(100%, 5127px);
+    width: min(100%,3000px);
     min-height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
     overflow: visible;
-    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
 }
 
 /* HEADER */
@@ -53,17 +53,24 @@
 
 .sec3 .p2{
     color: ghostwhite;
-    font-size: clamp(30px ,2.5vw, 75px);
+    font-size: clamp(25px ,2.5vw, 75px);
     font-weight: bold;
     text-align: center;
     display: block;
+    width: 90vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
 }
 
 .hobbies{
-    font-size: clamp(50px ,5vw, 130px);
+    font-size: clamp(45px ,5vw, 130px);
     background-image:-webkit-linear-gradient(140deg,rgb(28, 132, 138) 0%,rgb(35, 121, 168) 20%, rgb(48, 174, 151) 50%, rgb(11, 89, 68) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 3;
 }
 
 /* MAIN */
@@ -75,7 +82,8 @@
                 0 0 10px #0f7665;
     padding: 20px 60px;
     border-radius: 10px;
-    background-color: rgba(37, 37, 37, 0.267);
+    background-color: rgba(19, 19, 19, 0.629);
+    z-index: 3;
 }
 
 .fotoWrapper{
@@ -83,7 +91,8 @@
     gap: 3vw;
     align-items: center;
     justify-content: center;
-    background-color: rgba(37, 37, 37, 0.278);
+    background-color: rgba(19, 19, 19, 0.629);
+    z-index: 3;
 }
 
 .fotoback{
@@ -95,7 +104,8 @@
     place-items: center;
     box-shadow:0px 0px 5px rgb(0, 185, 136);
     transition: .4s ease;
-    background-color: rgba(37, 37, 37, 0.218);
+    background-color: rgba(19, 19, 19, 0.629);
+    z-index: 3;
 }
 
 .sec3 .fotoHob{
@@ -201,6 +211,38 @@
     transition:.4s ease;
 }
 
+.glowBox2{
+    width: 95%;
+    height: 100px;
+    background-color: rgb(0, 175, 128);
+    position: absolute;
+    opacity: .3;
+    border-radius: 999px;
+    filter: blur(100px);
+    z-index: 0;
+    top: 200px;
+    box-shadow: 0 0 0px rgb(0, 175, 128),
+                0 0 0px rgb(0, 175, 128),
+                0 0 0px rgb(0, 175, 128),
+                0 0 4px rgb(0, 175, 128),
+                0 0 4px rgb(0, 175, 128),
+                0 0 8px rgb(0, 175, 128),
+                0 0 12px rgb(0, 175, 128),
+                0 0 25px rgb(0, 175, 128),
+                0 0 25px rgb(0, 175, 128),
+                0 0 25px rgb(0, 175, 128),
+                0 0 25px rgb(0, 175, 128),
+                0 0 50px rgb(0, 175, 128),
+                0 0 50px rgb(0, 175, 128),
+                0 0 50px rgb(0, 175, 128),
+                0 0 100px rgb(0, 175, 128),
+                0 0 150px rgb(0, 175, 128),
+                0 0 200px rgb(0, 175, 128),
+                0 0 220px rgb(0, 175, 128),
+                0 0 250px rgb(0, 175, 128),
+                0 0 270px rgb(0, 175, 128);
+}
+
 
 /* GALLERY */
 
@@ -273,11 +315,12 @@
     .fotoWrapper{
         overflow: visible;
         background-color: rgba(50, 50, 50, 0.366);
+        gap: 0;
     }
 
     .fotoback{
         scale: .85;
-        margin: 10px 0;
+        margin: 0;
     }
     .fotoback:hover{
         scale: .95;
