@@ -41,7 +41,7 @@
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
-    font-size: clamp(35px, 2.9vw, 150px);
+    font-size: clamp(35px, 3vw, 150px);
     margin-right: 10px;
     background-image:-webkit-linear-gradient(220deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgb(24, 80, 65) 100%);
     -webkit-background-clip: text;

@@ -60,7 +60,7 @@
 
 .bttn{
     background-color: rgba(19, 19, 19, 0.603);
-    font-size: clamp(14px, 1.3vw, 40px);
+    font-size: clamp(15px, 1.3vw, 40px);
     color: ghostwhite;
     display: flex;
     width: 16vw;
@@ -145,18 +145,8 @@
     border-radius: 20px 100px;
     right: 200px;
     transform: translate(0, 100px);
-    box-shadow: 0 0 0px rgba(0, 160, 175, 0.701),
-                0 0 0px rgba(0, 160, 175, 0.701),
-                0 0 0px rgba(0, 160, 175, 0.701),
-                0 0 4px rgba(0, 160, 175, 0.701),
-                0 0 4px rgba(0, 160, 175, 0.701),
-                0 0 8px rgba(0, 160, 175, 0.701),
-                0 0 12px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701);
-    filter: blur(150px);
+
+    filter: blur(100px);
 }
 
 @media screen and (max-width:951.2px){
