@@ -22,18 +22,17 @@
 
 .motivation, .contactBoxsmall{
 
-  width: clamp(350px, 38vw, 1000px);
+  width: clamp(300px, 38vw, 1000px);
 }
 
 .motivation{
-  padding: 20px 30px;
-  text-align: center;
-  font-size: clamp(12px,1.1vw,20px);
   color: rgb(255, 255, 255);
   z-index: 2;
-  background: rgb(0, 0, 0);
   border-radius: 10px;
   border:2px solid #0f7665;
+  background-color: rgba(19, 19, 19, 0.629);
+  padding: 30px 30px;
+  text-align: center;
 }
 
 .motivation h1{
@@ -46,11 +45,13 @@
   display: inline-block;
   padding: 5px 20px;
   font-weight: bold;
+  z-index: 2;
 }
 
 .motivation p{
   z-index: 2;
-  color:rgb(255, 255, 255) ;
+  color:rgb(255, 255, 255);
+  font-size: clamp(13px,1.1vw,20px);
 }
 
 .contactBoxsmall{
@@ -80,14 +81,16 @@
 }
 
 .glowBox{
-  width: 300px;
-  height: 300px;
+  width: clamp(100px, 100rem, 500px);
+  height: clamp(300px, 2.5rem, 700px);
   background-color: rgb(0, 175, 128);
   position: absolute;
   opacity: .3;
   border-radius: 999px;
   top: 100px;
-  z-index: -1;
+  left: -170px;
+  z-index: 0;
+  filter: blur(150px);
 
   box-shadow: 0 0 0px rgb(0, 175, 128),
               0 0 0px rgb(0, 175, 128),
@@ -99,17 +102,7 @@
               0 0 25px rgb(0, 175, 128),
               0 0 25px rgb(0, 175, 128),
               0 0 25px rgb(0, 175, 128),
-              0 0 25px rgb(0, 175, 128),
-              0 0 50px rgb(0, 175, 128),
-              0 0 50px rgb(0, 175, 128),
-              0 0 50px rgb(0, 175, 128),
-              0 0 100px rgb(0, 175, 128),
-              0 0 150px rgb(0, 175, 128),
-              0 0 200px rgb(0, 175, 128),
-              0 0 220px rgb(0, 175, 128),
-              0 0 250px rgb(0, 175, 128),
-              0 0 270px rgb(0, 175, 128);
-  filter: blur(100px);
+              0 0 25px rgb(0, 175, 128);
 }
 
 
@@ -118,7 +111,7 @@
         margin-bottom: 30px;
     }
     .motivation{
-        padding: 20px 20px;
+        padding: 20px 10px;
         margin-bottom: 20px;
     }
     .sec5 .contactBox{

@@ -32,7 +32,7 @@
     margin-right: 10px;
     height: 46%;
     background: #3434341c;
-    background: linear-gradient(90deg,#34343400 0%, #3434343f 50%, #34343465 100%);
+    background: linear-gradient(90deg,#34343400 0%, #1f1f1f2f 50%, #1515158e 100%);
     border-radius: 2px;
     z-index: 1;
 }
@@ -41,9 +41,9 @@
     margin-left: 3.5vw;
     animation: slide .6s both;
     animation-delay: .05s;
-    font-size: clamp(40px, 2.9vw, 150px);
+    font-size: clamp(35px, 2.9vw, 150px);
     margin-right: 10px;
-    background-image:-webkit-linear-gradient(30deg,rgb(63, 160, 116) 0%, rgb(30, 133, 112) 50%, rgb(8, 74, 53) 100%);
+    background-image:-webkit-linear-gradient(220deg,rgba(42, 155, 125, 1) 0%, rgba(62, 163, 145, 1) 50%, rgb(24, 80, 65) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -252,8 +252,8 @@
 }
 
 .glowBox3{
-    width: clamp(200px, 100rem, 500px);
-    height: clamp(400px, 2.5rem, 700px);
+    width: clamp(100px, 100rem, 500px);
+    height: clamp(200px, 5rem, 700px);
     background-color: rgb(0, 160, 175);
     position: absolute;
     opacity: .3;
@@ -271,13 +271,7 @@
                 0 0 4px rgba(0, 160, 175, 0.701),
                 0 0 8px rgba(0, 160, 175, 0.701),
                 0 0 12px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701);
+                0 0 25px rgba(0, 160, 175, 0.701);
 }
 
 @keyframes bl{

@@ -60,7 +60,7 @@
 
 .bttn{
     background-color: rgba(19, 19, 19, 0.603);
-    font-size: clamp(13px, 1.3vw, 40px);
+    font-size: clamp(14px, 1.3vw, 40px);
     color: ghostwhite;
     display: flex;
     width: 16vw;
@@ -136,10 +136,8 @@
 }
 
 .glowBox1{
-    /* width: 400px; */
-    width: clamp(300px, 100rem, 500px);
-    /* height:600px; */
-    height: clamp(500px, 2.5rem, 700px);
+    width: clamp(100px, 100rem, 500px);
+    height: clamp(300px, 2.5rem, 700px);
     background-color: rgb(0, 160, 175);
     position: absolute;
     opacity: .3;
@@ -157,16 +155,7 @@
                 0 0 25px rgba(0, 160, 175, 0.701),
                 0 0 25px rgba(0, 160, 175, 0.701),
                 0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 25px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 50px rgba(0, 160, 175, 0.701),
-                0 0 100px rgba(0, 160, 175, 0.701),
-                0 0 120px rgba(0, 160, 175, 0.701),
-                0 0 150px rgba(0, 160, 175, 0.701),
-                0 0 180px rgba(0, 160, 175, 0.701),
-                0 0 220px rgba(0, 160, 175, 0.701),
-                0 0 260px rgba(0, 160, 175, 0.701);
+                0 0 25px rgba(0, 160, 175, 0.701);
     filter: blur(150px);
 }
 
