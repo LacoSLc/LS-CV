@@ -290,7 +290,6 @@
     .sec3 main{
         display: grid;
         width: clamp(350px, 38vw, 1000px);
-        width: 79vw;
         overflow: scroll;
         border:2px solid #0f7665;
         box-shadow: 0 0 5px #0f7665,
