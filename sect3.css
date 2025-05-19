@@ -63,11 +63,13 @@
     align-items: center;
     justify-content: center;
     z-index: 3;
+    position: relative;
+    top: 20px;
 }
 
 .hobbies{
     font-size: clamp(45px ,5vw, 130px);
-    background-image:-webkit-linear-gradient(140deg,rgb(10, 52, 55) 0%,rgb(13, 66, 55) 20%, rgb(21, 77, 67) 50%, rgb(11, 89, 68) 100%);
+    background-image:-webkit-linear-gradient(70deg,rgb(28, 132, 138) 0%,rgb(35, 121, 168) 20%, rgb(48, 174, 151) 50%, rgb(11, 89, 68) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 3;
@@ -85,6 +87,16 @@
     background-color: rgba(19, 19, 19, 0.629);
     z-index: 3;
     bottom: 30px;
+    scale: .85;
+    width: 90vw;
+    min-width: 350px;
+    max-width: 1300px;
+    overflow: scroll;
+    scrollbar-color: transparent;
+}
+
+.sec3 main::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .fotoWrapper{
@@ -289,19 +301,16 @@
 
     .sec3 main{
         display: grid;
-        width: clamp(350px, 38vw, 1000px);
         overflow: scroll;
         border:2px solid #0f7665;
         box-shadow: 0 0 5px #0f7665,
                     0 0 10px #0f7665;
         padding: 0px;
     }
-
     .fotoWrapper{
         overflow: visible;;
         gap: 0;
     }
-
     .fotoback{
         scale: .85;
         margin: 0;
@@ -309,9 +318,6 @@
     .fotoback:hover{
         scale: .95;
     }
-
-
-    
     .box{
         width: 340px;
     }

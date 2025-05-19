@@ -226,7 +226,7 @@
 /* FOTKA */
 
 .fotka{
-    width: clamp(240px, 30vw, 800px);
+    width: clamp(240px, 30vw, 600px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,7 @@
 }
 
 .mojaFotka{
-    width: clamp(240px, 28vw, 800px);
+    width: clamp(240px, 28vw, 600px);
     /* animation: bl 1s both; */
     animation-delay: .6s;
     z-index: 3;
@@ -266,7 +266,7 @@
 }
 
 .mojaFotka2 {
-    width: clamp(240px, 28vw, 800px);
+    width: clamp(240px, 28vw, 600px);
     /* animation: bl 1s both; */
     animation-delay: .6s;
     position: absolute;
