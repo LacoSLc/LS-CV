@@ -82,12 +82,11 @@
     border:3px solid #0f7665;
     box-shadow: 0 0 5px #0f7665,
                 0 0 10px #0f7665;
-    /* padding: 20px 60px; */
     border-radius: 10px;
     background-color: rgba(19, 19, 19, 0.629);
     z-index: 3;
-    width: 80vw;
     min-width: 350px;
+    width: 80vw;
     max-width: 1300px;
     display: flex;
     overflow-x: auto;
@@ -100,8 +99,8 @@
 .fotoWrapper{
     z-index: 3;
     border-color: transparent;
-    scale: .85;
-    gap: 6vw;
+    scale: .9;
+    gap: 5vw;
     display: flex;
 }
 
@@ -296,20 +295,15 @@
 
 @media screen and (max-width:951.2px){
 
-    .sec3 main{
-        overflow-x: auto;
-        border:2px solid #0f7665;
-        box-shadow: 0 0 5px #0f7665,
-                    0 0 10px #0f7665;
-    }
     .fotoWrapper{
-        scale: .8;
+        scale: .75;
+        gap: 10vw;
     }
     .box{
-        width: 340px;
+        width: 320px;
     }
     .box:hover{
-        width: 340px;
+        width: 320px;
     }
 }
 
