@@ -60,6 +60,7 @@
 
 .glowBox4{
     width: 100%;
+    max-width: 3000px;
     height: 100px;
     rotate: 10deg;
     background-color: rgb(0, 175, 128);

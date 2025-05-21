@@ -1,4 +1,4 @@
-// SECTION 1
+// ___________________________________________SECTION 1__________________________________________
 
 let openHam = document.querySelector('#openHam');
 let closeHam = document.querySelector('#closeHam');
@@ -13,7 +13,8 @@ const hamburgerEvent = (navigation, close, open) => {
 openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
 closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
 
-// SECTION 2
+
+// __________________________________________SECTION 2____________________________________________
 
 let sections = document.querySelectorAll('section')
 
@@ -35,11 +36,9 @@ window.onscroll = () => {
 
 
 
-// SECTION 3 GALLERY
+// _________________________________________________________SECTION 3 GALLERY__________________________________________________
 
 // FISHING
-
-
 let fishButton = document.querySelector('#fishButton');
 let closer1 = document.querySelector('#closer1');
 let galleryFish = document.querySelector("#wrapperFish");
@@ -52,8 +51,9 @@ const galleryEventF = (gallery, close, open) => {
 fishButton.addEventListener('click', () => galleryEventF("block", "block", "none"));
 closer1.addEventListener('click', () => galleryEventF("none", "none", "block"));
 
-// ARCHERY
 
+
+// ARCHERY
 let archeryButton = document.querySelector('#archeryButton');
 let closer2 = document.querySelector('#closer2');
 let galleryArchery = document.querySelector("#wrapperArchery");
@@ -67,8 +67,9 @@ const galleryEventA = (gallery,close, open) => {
 archeryButton.addEventListener('click', () => galleryEventA("block", "block", "none"));
 closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
 
-// DRONE
 
+
+// DRONE
 let droneButton = document.querySelector('#droneButton');
 let closer3 = document.querySelector('#closer3');
 let galleryDrone = document.querySelector("#wrapperDrone");
@@ -83,9 +84,30 @@ droneButton.addEventListener('click', () => galleryEventD("block", "block", "non
 closer3.addEventListener('click', () => galleryEventD("none", "none", "block"));
 
 
+// Body stop scroll when gallery open
+function openGallery(id) {
+    document.getElementById(id).style.display = "flex";
+    document.body.classList.add("no-scroll");
+}
+function closeGallery(id) {
+    document.getElementById(id).style.display = "none";
+    document.body.classList.remove("no-scroll");
+}
+
+// SEC 3 scrollbar from middle
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollContainer = document.getElementById('scroll-container');
+  const content = document.getElementById('fotoWrapper');
+  
+  const middlePosition = (content.offsetWidth - scrollContainer.clientWidth) / 2;
+ 
+  scrollContainer.scrollLeft = middlePosition;
+});
 
 
-// SECTION 4 
+
+
+//________________________________________________________ SECTION 4 _______________________________________________________
 
 let links = document.querySelectorAll(".bttn");
 
@@ -125,6 +147,9 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// ___________________________________________Section 5__________________________________________________--
+
 // _____Donwload CV_____
 
 var $ = (s, o = document) => o.querySelector(s);
@@ -138,7 +163,7 @@ $(".dl").addEventListener("click", function() {
 
 
 
-// Side navigator
+//___________________________________ Side navigator_________________________________________________
 
 let mainNavLinks = document.querySelectorAll(".sideLight");
 let mainSections = document.querySelectorAll(".secSide");
@@ -171,3 +196,9 @@ window.addEventListener("scroll", event => {
     }
   });
 });
+
+
+
+
+
+

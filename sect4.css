@@ -145,8 +145,8 @@
     border-radius: 20px 100px;
     right: 200px;
     transform: translate(0, 100px);
-
     filter: blur(100px);
+
 }
 
 @media screen and (max-width:951.2px){

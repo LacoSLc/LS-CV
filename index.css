@@ -79,6 +79,7 @@ body{
     }
 }
 
-/* .sec1, .sec2, .sec3, .sec4, .sec5{
-    border: 1px solid red;
-} */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}

@@ -79,33 +79,30 @@
 
 .sec3 main{
     position: relative;
-    display: grid;
     border:3px solid #0f7665;
-    box-shadow: 0 0 5px #0f7665;
-    padding: 20px 60px;
+    box-shadow: 0 0 5px #0f7665,
+                0 0 10px #0f7665;
+    /* padding: 20px 60px; */
     border-radius: 10px;
     background-color: rgba(19, 19, 19, 0.629);
     z-index: 3;
-    bottom: 30px;
-    scale: .85;
-    width: 90vw;
+    width: 80vw;
     min-width: 350px;
     max-width: 1300px;
-    overflow: scroll;
-    scrollbar-color: transparent;
+    display: flex;
+    overflow-x: auto;
 }
 
-.sec3 main::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+/* .sec3 main::-webkit-scrollbar { 
+    display: none;
+} */
 
 .fotoWrapper{
-    display: flex;
-    gap: 3vw;
-    align-items: center;
-    justify-content: center;
     z-index: 3;
     border-color: transparent;
+    scale: .85;
+    gap: 6vw;
+    display: flex;
 }
 
 .fotoback{
@@ -167,7 +164,7 @@
 }
 
 .layout .text{
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -254,6 +251,7 @@
     z-index: 999;
     bottom: 0;
     overflow: auto;
+    border: 1px solid red;
 }
 
 #wrapp{
@@ -275,6 +273,7 @@
     border-radius: 50px;
     overflow: hidden;
     width: 120px;
+    border: 2px solid green;
 }
 
 .box:hover{
@@ -300,23 +299,13 @@
 @media screen and (max-width:951.2px){
 
     .sec3 main{
-        display: grid;
-        overflow: scroll;
+        overflow-x: auto;
         border:2px solid #0f7665;
         box-shadow: 0 0 5px #0f7665,
                     0 0 10px #0f7665;
-        padding: 0px;
     }
     .fotoWrapper{
-        overflow: visible;;
-        gap: 0;
-    }
-    .fotoback{
-        scale: .85;
-        margin: 0;
-    }
-    .fotoback:hover{
-        scale: .95;
+        scale: .8;
     }
     .box{
         width: 340px;
