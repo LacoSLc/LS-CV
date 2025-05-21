@@ -251,7 +251,6 @@
     z-index: 999;
     bottom: 0;
     overflow: auto;
-    border: 1px solid red;
 }
 
 #wrapp{
@@ -273,7 +272,6 @@
     border-radius: 50px;
     overflow: hidden;
     width: 120px;
-    border: 2px solid green;
 }
 
 .box:hover{
