@@ -148,8 +148,10 @@
 <!-- SECTION 3 -->
   
   <section id="sec3" class="sec3 secSide">
+
     
-    <!-- HIDDEN GALLERY -->
+    
+    <!-- HIDDEN GALLERY
     <div id="wrapperFish" class="WRF">
       <button id="closer1" onclick="closeGallery('wrapperFish')">&#x2716;</button>
       <div id="wrapp">
@@ -182,8 +184,13 @@
           <div class="box"><img src="foto/archery/4.jpg" alt="" width="400px"></div> 
           <div class="box"><img src="foto/archery/5.jpeg" alt="" width="400px"></div> 
       </div>
-    </div>
-
+    </div> -->
+    <div id="fullscreenGallery" class="fullscreen-gallery">
+      <span class="close-btn" onclick="closeGallery()">&times;</span>
+      <img id="galleryImage" src="" alt="Gallery Image">
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>  
     <!-- HEADER -->
     <header>
       <!-- <p class="neon">Ho<span class="flicker-slow">b</span>b<span class="flicker-fast">i</span>es</p> -->
@@ -202,7 +209,7 @@
               <p class="triBodky">...</p>
               <p class="nadpis">FISHING</p>
               <p class="text">I've loved fishing since I was a little boy. I enjoy fishing for pikes and trouts with a spinning rod or fly fishing in mountain rivers.</p> 
-              <button onclick="openGallery('wrapperFish')" id="fishButton">Show more</button>
+              <button onclick="openGallery('fish')">Show more</button>
             </div>
           </div>
         </div>
@@ -214,7 +221,7 @@
               <p class="triBodky">...</p>
               <p class="nadpis">VIDEOGRAPHY</p>
               <p class="text">Flying and filming videos with a drone is a breathtaking experience. With my Dji Air 2s I can see the landscape from a bird's eye.</p>
-              <button onclick="openGallery('wrapperDrone')" id="droneButton">Show more</button>
+              <button onclick="openGallery('drone')">Show more</button>
             </div>
           </div>
         </div>
@@ -226,7 +233,7 @@
               <p class="triBodky">...</p>
               <p class="nadpis">ARCHERY</p>
               <p class="text">Archery is a beautiful sport that helps me relax and at the same time gives me a sufficient amount of adrenaline.</p>
-              <button onclick="openGallery('wrapperArchery')" id="archeryButton">Show more</button>
+              <button onclick="openGallery('archery')">Show more</button>
             </div>
           </div>
         </div>

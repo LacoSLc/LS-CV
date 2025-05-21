@@ -239,7 +239,73 @@
 
 /* GALLERY */
 
-#wrapperFish, #wrapperArchery, #wrapperDrone{
+.fullscreen-gallery {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen-gallery img {
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  color: #00ffd5;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .prev, .next {
+    font-size: 28px;
+  }
+
+  .fullscreen-gallery img {
+    max-width: 95%;
+    max-height: 70%;
+  }
+}
+
+/* #wrapperFish, #wrapperArchery, #wrapperDrone{
     display: none;
     position: fixed;
     width: 100%;
@@ -289,7 +355,7 @@
     align-self: center;
     width: 100%;
     text-shadow: 0 0 10px rgb(0, 210, 154);
-}
+} */
 
 /* MEDIA responsive */
 

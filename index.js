@@ -38,61 +38,148 @@ window.onscroll = () => {
 
 // _________________________________________________________SECTION 3 GALLERY__________________________________________________
 
-// FISHING
-let fishButton = document.querySelector('#fishButton');
-let closer1 = document.querySelector('#closer1');
-let galleryFish = document.querySelector("#wrapperFish");
-
-const galleryEventF = (gallery, close, open) => {
-    galleryFish.style.display = gallery;
-    closer.style.display = close;
-    fishButton.style.display = open;
-};
-fishButton.addEventListener('click', () => galleryEventF("block", "block", "none"));
-closer1.addEventListener('click', () => galleryEventF("none", "none", "block"));
-
-
-
-// ARCHERY
-let archeryButton = document.querySelector('#archeryButton');
-let closer2 = document.querySelector('#closer2');
-let galleryArchery = document.querySelector("#wrapperArchery");
-
-const galleryEventA = (gallery,close, open) => {
-    galleryArchery.style.display = gallery;
-    closer.style.display = close;
-    archeryButton.style.display = open;
-};
-
-archeryButton.addEventListener('click', () => galleryEventA("block", "block", "none"));
-closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
-
-
-
-// DRONE
-let droneButton = document.querySelector('#droneButton');
-let closer3 = document.querySelector('#closer3');
-let galleryDrone = document.querySelector("#wrapperDrone");
-
-const galleryEventD = (gallery,close, open) => {
-    galleryDrone.style.display = gallery;
-    closer.style.display = close;
-    droneButton.style.display = open;
+const imageCategories = {
+  fish: [
+    "foto/ryby/1.jpg",
+    "foto/ryby/2.jpg",
+    "foto/ryby/3.jpg",
+    "foto/ryby/4.jpg",
+    "foto/ryby/5.jpg",
+    "foto/ryby/6.jpg"
+  ],
+  archery: [
+    "foto/archery/1.jpg",
+    "foto/archery/2.png",
+    "foto/archery/3.jpg",
+    "foto/archery/4.jpg",
+    "foto/archery/5.jpeg"
+  ],
+  drone: [
+    "foto/drone/1.png",
+    "foto/drone/2.png",
+    "foto/drone/3.png",
+    "foto/drone/4.png",
+    "foto/drone/5.png"
+  ]
 };
 
-droneButton.addEventListener('click', () => galleryEventD("block", "block", "none"));
-closer3.addEventListener('click', () => galleryEventD("none", "none", "block"));
+let currentIndex = 0;
+let currentCategory = 'fish';
+
+function openGallery(category) {
+  currentCategory = category;
+  currentIndex = 0;
+  updateGalleryImage();
+  document.getElementById("fullscreenGallery").style.display = "flex";
+  document.body.classList.add("no-scroll");
+}
+
+function closeGallery() {
+  document.getElementById("fullscreenGallery").style.display = "none";
+  document.body.classList.remove("no-scroll");
+}
+
+function changeImage(direction) {
+  const images = imageCategories[currentCategory];
+  currentIndex = (currentIndex + direction + images.length) % images.length;
+  updateGalleryImage();
+}
+
+function updateGalleryImage() {
+  const img = document.getElementById("galleryImage");
+  img.src = imageCategories[currentCategory][currentIndex];
+}
+
+// Zatvoriť kliknutím mimo obrázka
+document.getElementById("fullscreenGallery").addEventListener("click", function (e) {
+  if (e.target.id === "fullscreenGallery") {
+    closeGallery();
+  }
+});
+
+// ____SWIPE OVLADANIE_________
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+const fullscreenGallery = document.getElementById("fullscreenGallery"); // alebo tvoj wrapper
+
+fullscreenGallery.addEventListener("touchstart", function (e) {
+  touchStartX = e.touches[0].clientX;
+});
+
+fullscreenGallery.addEventListener("touchend", function (e) {
+  touchEndX = e.changedTouches[0].clientX;
+  handleSwipeGesture();
+});
+
+function handleSwipeGesture() {
+  const swipeThreshold = 50; // Minimálny rozdiel pre rozpoznanie swipe
+
+  if (touchEndX < touchStartX - swipeThreshold) {
+    // Swipe doľava – ďalší obrázok
+    showNextImage();
+  } else if (touchEndX > touchStartX + swipeThreshold) {
+    // Swipe doprava – predchádzajúci obrázok
+    showPrevImage();
+  }
+}
+
+// // FISHING
+// let fishButton = document.querySelector('#fishButton');
+// let closer1 = document.querySelector('#closer1');
+// let galleryFish = document.querySelector("#wrapperFish");
+
+// const galleryEventF = (gallery, close, open) => {
+//     galleryFish.style.display = gallery;
+//     closer.style.display = close;
+//     fishButton.style.display = open;
+// };
+// fishButton.addEventListener('click', () => galleryEventF("block", "block", "none"));
+// closer1.addEventListener('click', () => galleryEventF("none", "none", "block"));
+
+
+
+// // ARCHERY
+// let archeryButton = document.querySelector('#archeryButton');
+// let closer2 = document.querySelector('#closer2');
+// let galleryArchery = document.querySelector("#wrapperArchery");
+
+// const galleryEventA = (gallery,close, open) => {
+//     galleryArchery.style.display = gallery;
+//     closer.style.display = close;
+//     archeryButton.style.display = open;
+// };
+
+// archeryButton.addEventListener('click', () => galleryEventA("block", "block", "none"));
+// closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
+
+
+
+// // DRONE
+// let droneButton = document.querySelector('#droneButton');
+// let closer3 = document.querySelector('#closer3');
+// let galleryDrone = document.querySelector("#wrapperDrone");
+
+// const galleryEventD = (gallery,close, open) => {
+//     galleryDrone.style.display = gallery;
+//     closer.style.display = close;
+//     droneButton.style.display = open;
+// };
+
+// droneButton.addEventListener('click', () => galleryEventD("block", "block", "none"));
+// closer3.addEventListener('click', () => galleryEventD("none", "none", "block"));
 
 
 // Body stop scroll when gallery open
-function openGallery(id) {
-    document.getElementById(id).style.display = "flex";
-    document.body.classList.add("no-scroll");
-}
-function closeGallery(id) {
-    document.getElementById(id).style.display = "none";
-    document.body.classList.remove("no-scroll");
-}
+// function openGallery(id) {
+//     document.getElementById(id).style.display = "flex";
+//     document.body.classList.add("no-scroll");
+// }
+// function closeGallery(id) {
+//     document.getElementById(id).style.display = "none";
+//     document.body.classList.remove("no-scroll");
+// }
 
 // SEC 3 scrollbar from middle
 document.addEventListener('DOMContentLoaded', function () {
