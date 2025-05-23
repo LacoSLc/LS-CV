@@ -38,91 +38,6 @@ window.onscroll = () => {
 
 // _________________________________________________________SECTION 3 GALLERY__________________________________________________
 
-// const imageCategories = {
-//   fish: [
-//     "foto/ryby/1.jpg",
-//     "foto/ryby/2.jpg",
-//     "foto/ryby/3.jpg",
-//     "foto/ryby/4.jpg",
-//     "foto/ryby/5.jpg",
-//     "foto/ryby/6.jpg"
-//   ],
-//   archery: [
-//     "foto/archery/1.jpg",
-//     "foto/archery/2.png",
-//     "foto/archery/3.jpg",
-//     "foto/archery/4.jpg",
-//     "foto/archery/5.jpeg"
-//   ],
-//   drone: [
-//     "foto/drone/1.png",
-//     "foto/drone/2.png",
-//     "foto/drone/3.png",
-//     "foto/drone/4.png",
-//     "foto/drone/5.png"
-//   ]
-// };
-
-// let currentIndex = 0;
-// let currentCategory = 'fish';
-
-// function openGallery(category) {
-//   currentCategory = category;
-//   currentIndex = 0;
-//   updateGalleryImage();
-//   document.getElementById("fullscreenGallery").style.display = "flex";
-//   document.body.classList.add("no-scroll");
-// }
-
-// function closeGallery() {
-//   document.getElementById("fullscreenGallery").style.display = "none";
-//   document.body.classList.remove("no-scroll");
-// }
-
-// function changeImage(direction) {
-//   const images = imageCategories[currentCategory];
-//   currentIndex = (currentIndex + direction + images.length) % images.length;
-//   updateGalleryImage();
-// }
-
-// function updateGalleryImage() {
-//   const img = document.getElementById("galleryImage");
-//   img.src = imageCategories[currentCategory][currentIndex];
-// }
-
-// // Zatvoriť kliknutím mimo obrázka
-// document.getElementById("fullscreenGallery").addEventListener("click", function (e) {
-//   if (e.target.id === "fullscreenGallery") {
-//     closeGallery();
-//   }
-// });
-
-// // ____SWIPE OVLADANIE_________
-
-// let touchStartX = 0;
-// let touchEndX = 0;
-
-// const gallery = document.getElementById("fullscreenGallery");
-
-// gallery.addEventListener("touchstart", function (e) {
-//   touchStartX = e.changedTouches[0].screenX;
-// }, false);
-
-// gallery.addEventListener("touchend", function (e) {
-//   touchEndX = e.changedTouches[0].screenX;
-//   handleGesture();
-// }, false);
-
-// function handleGesture() {
-//   const swipeThreshold = 50; // minimálny pohyb v pixeloch
-//   if (touchEndX < touchStartX - swipeThreshold) {
-//     changeImage(1); // swipe left -> ďalší obrázok
-//   }
-//   if (touchEndX > touchStartX + swipeThreshold) {
-//     changeImage(-1); // swipe right -> predchádzajúci obrázok
-//   }
-// }
-
 
 const imageCategories = {
   fish: [
@@ -132,7 +47,8 @@ const imageCategories = {
     "foto/ryby/4.jpg",
     "foto/ryby/5.jpg",
     "foto/ryby/6.jpg",
-    "foto/ryby/7.jpg"
+    "foto/ryby/7.jpg",
+    "foto/ryby/8.jpg"
   ],
   archery: [
     "foto/archery/1.jpg",
