@@ -60,13 +60,13 @@
 
 .bttn{
     background-color: rgba(19, 19, 19, 0.603);
-    font-size: clamp(15px, 1.3vw, 40px);
+    font-size: clamp(16px, 1.3vw, 40px);
     color: ghostwhite;
     display: flex;
     width: 16vw;
     max-width:400px;
     text-decoration: none;
-    border:2px solid #0f7665;
+    border:3px solid #0f7665;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -81,31 +81,27 @@
     background-color: #0f7665;
     color:ghostwhite;
     transition: .3s all;
+    border-radius: 10px;
+    scale: 1.02;
     box-shadow: 0px 0px 4px rgb(2, 135, 100),
                 0px 0px 4px rgb(18, 170, 130), 
                 0px 0px 4px rgb(31, 182, 142), 
                 0px 0px 4px rgb(37, 203, 159);
+                
 
 }
+
+/* TABULLKY S PERCENTAMI */
 
 .percenta{
     background-color: rgba(19, 19, 19, 0.629);
     width: 100%;
-    min-height: 100%;
-    /* box-shadow: 0px 0px 4px rgb(2, 135, 100),
-                0px 0px 4px rgb(18, 170, 130), 
-                0px 0px 4px rgb(31, 182, 142), 
-                0px 0px 4px rgb(37, 203, 159); */
-    
+    min-height: 100%;    
     border:3px solid #0f7665;
     border-radius: 10px;
     opacity: 1;
     z-index: 1;
 }
-
-
-/* TABULLKY S PERCENTAMI */
-
 
 .percenta ul{
     margin: 20px;

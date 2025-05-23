@@ -265,6 +265,7 @@
     animation-delay: .6s;
     z-index: 3;
     transition: .5s all;
+    background-color: rgb(14, 14, 16);
 }
 
 .mojaFotka2 {

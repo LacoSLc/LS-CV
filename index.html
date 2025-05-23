@@ -12,12 +12,11 @@
     <link rel="stylesheet" href="sect6.css">
     <link rel="stylesheet" href="hideSec.css">
     <link rel="stylesheet" href="fonts/SpaceGrotesk-Bold.otf">
-
     <title>Portfolio</title>
 </head>
 
-
 <body>
+  <!-- Hide section -->
 
   <section class="hideSec"> <div class="hideBox"></div> </section>
   
@@ -32,7 +31,7 @@
   </div>
 
 
-  <!-------- SECTION 1 ------->
+  <!----------------------------------------------- SECTION 1 ----------------------------------------------->
   
   
   <section id="sec1" class="sec1 secSide show-animate">
@@ -52,11 +51,11 @@
             <span id="openHam">&#9776;</span>
             <span id="closeHam">&#x2716;</span>
           </div>
-
       </header>
     </div>
 
-            <!-- KARTA -->
+            <!-- Avatar -->
+
     <div class="mainWrapper">
       <main>
         <div class="glowBox3"></div>
@@ -87,18 +86,9 @@
           </div>
         </div>
 
-              <!-- FOTKA -->
-
-      </main>
-    </div>
-
-    <footer>
-
-    </footer>
-
   </section>
 
- <!------- SECTION 2 -------->
+ <!-----------------------------------------------  SECTION 2 ------------------------------------------------>
 
   <section id="sec2" class="sec2 secSide">
     <div class="container2">
@@ -145,55 +135,12 @@
     </div>
   </section>
 
-<!-- SECTION 3 -->
+<!----------------------------------------------- SECTION 3------------------------------------------- -->
   
   <section id="sec3" class="sec3 secSide">
-
-    
-    
-    <!-- HIDDEN GALLERY
-    <div id="wrapperFish" class="WRF">
-      <button id="closer1" onclick="closeGallery('wrapperFish')">&#x2716;</button>
-      <div id="wrapp">
-          <div class="box"><img src="foto/ryby/1.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/ryby/2.jpg" alt="" width="400px"></div>
-          <div class="box"><img src="foto/ryby/3.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/ryby/4.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/ryby/5.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/ryby/6.jpg" alt="" width="400px"></div> 
-      </div>
-    </div>
-
-    <div id="wrapperDrone" class="WRD">
-      <button id="closer3" onclick="closeGallery('wrapperDrone')">&#x2716;</button>
-      <div id="wrapp">
-          <div class="box"><img src="foto/drone/1.png" alt="" width="900px"></div>
-          <div class="box"><img src="foto/drone/2.png" alt="" width="900px"></div>
-          <div class="box"><img src="foto/drone/3.png" alt="" width="900px"></div>
-          <div class="box"><img src="foto/drone/4.png" alt="" width="900px"></div>
-          <div class="box"><img src="foto/drone/5.png" alt="" width="900px"></div>
-      </div>
-    </div>
-
-    <div id="wrapperArchery" class="WRA">
-      <button id="closer2" onclick="closeGallery('wrapperArchery')">&#x2716;</button>
-      <div id="wrapp">
-          <div class="box"><img src="foto/archery/1.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/archery/2.png" alt="" width="400px"></div>                 
-          <div class="box"><img src="foto/archery/3.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/archery/4.jpg" alt="" width="400px"></div> 
-          <div class="box"><img src="foto/archery/5.jpeg" alt="" width="400px"></div> 
-      </div>
-    </div> -->
-    <div id="fullscreenGallery" class="fullscreen-gallery">
-      <span class="close-btn" onclick="closeGallery()">&times;</span>
-      <img id="galleryImage" src="" alt="Gallery Image">
-      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-      <a class="next" onclick="changeImage(1)">&#10095;</a>
-    </div>  
+  
     <!-- HEADER -->
     <header>
-      <!-- <p class="neon">Ho<span class="flicker-slow">b</span>b<span class="flicker-fast">i</span>es</p> -->
        <div class="p2"><p>...these are my <span class="hobbies"><'hobbies'></span>...</p></div>
        <div class="glowBox2"></div>
     </header>
@@ -203,7 +150,7 @@
       <div class="fotoWrapper" id="fotoWrapper">
         
         <div id="fishing" class="fotoback">
-          <img class="fotoHob" src="foto/ryby2.jpg" alt="">
+          <img class="fotoHob" src="foto/fish.jpg" alt="">
           <div class="layout">
             <div class="layoutWrap">
               <p class="triBodky">...</p>
@@ -232,7 +179,7 @@
             <div class="layoutWrap">
               <p class="triBodky">...</p>
               <p class="nadpis">ARCHERY</p>
-              <p class="text">Archery is a beautiful sport that helps me relax and at the same time gives me a sufficient amount of adrenaline.</p>
+              <p class="text">Archery is a beautiful sport that helps me relax and at the same time gives me a sufficient amount of adrenaline. Man Kung archery.</p>
               <button onclick="openGallery('archery')">Show more</button>
             </div>
           </div>
@@ -240,10 +187,17 @@
         
       </div>
     </main>
+          <!-- _____Gallery___ -->
+    <div id="fullscreenGallery" class="fullscreen-gallery">
+      <span class="close-btn" onclick="closeGallery()">&times;</span>
+      <img id="galleryImage" src="" alt="Gallery Image">
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
   
   </section>
 
-<!-- SECTION 4 -->
+<!----------------------------------------------- SECTION 4 -----------------------------------------------  -->
 
   <section id="sec4" class="sec4 secSide">
 
@@ -252,29 +206,23 @@
     <main>
       <div class="glowBox1"></div>
       <div id="h2wrapp">
-        <a class="bttn active" id="btn" href="#perhtml">Programming</a>
-        <a class="bttn" id="btn" href="#percss">Certifications</a>
+        <a class="bttn active" id="btn" href="#aboutMe">About me</a>
         <a class="bttn" id="btn" href="#perjs">Licenses</a>
+        <a class="bttn" id="btn" href="#percss">Certifications</a>
         <a class="bttn" id="btn" href="#perpython">Softwares</a>
-        <a class="bttn" id="btn" href="#aboutMe">About me</a>
+        <a class="bttn" id="btn" href="#perhtml">Programming</a>
       </div>
 
       <div class="percenta">
-        <div id="perhtml" class="wrappPer">
-          <ul>
-            <li>HTML - <span class="skillsLvl">advanced</span></li>
-            <li>CSS - <span class="skillsLvl">advanced</span></li>
-            <li>Javascript - <span class="skillsLvl">beginner</span></li>
-            <li>Python - <span class="skillsLvl">intermediate</span></li>
-            <li>Django - <span class="skillsLvl">beginner</span></li>
-            <li>Github - <span class="skillsLvl">beginner</span></li>
-          </ul>
-        </div>
 
-        <div id="percss" class="wrappPer hide">
-          <ul>
-            <li>Advanced programming in Python</li>
-            <li>HSE - Examination for operational supervisors SGU-VAZ 2021</li>
+        <div id="aboutMe" class="wrappPer">
+          <ul class="aboutMe">
+            <li>Adaptable</li>
+            <li>Loyal</li>
+            <li>Friendly</li>
+            <li>Stress rezistance</li>
+            <li>Professional approach</li>
+            <li>Detailer</li>
           </ul>
         </div>
 
@@ -285,6 +233,13 @@
             <li>Forklift driver license - <span class="skillsLvl">A,B,C,D,E,W1/W2,G</span></li>
             <li>Crane operator license</li>
             <li>Binding license</li>
+          </ul>
+        </div>
+
+        <div id="percss" class="wrappPer hide">
+          <ul>
+            <li>Advanced programming in Python</li>
+            <li>HSE - Examination for operational supervisors SGU-VAZ 2021</li>
           </ul>
         </div>
 
@@ -300,24 +255,23 @@
           </ul>
         </div>
 
-        <div id="aboutMe" class="wrappPer hide">
-          <ul class="aboutMe">
-            <li>Adaptable</li>
-            <li>Loyal</li>
-            <li>Friendly</li>
-            <li>Stress rezistance</li>
-            <li>Professional approach</li>
-            <li>Detailer</li>
+        <div id="perhtml" class="wrappPer hide">
+          <ul>
+            <li>HTML - <span class="skillsLvl">advanced</span></li>
+            <li>CSS - <span class="skillsLvl">advanced</span></li>
+            <li>Javascript - <span class="skillsLvl">beginner</span></li>
+            <li>Python - <span class="skillsLvl">intermediate</span></li>
+            <li>Django - <span class="skillsLvl">beginner</span></li>
+            <li>Github - <span class="skillsLvl">beginner</span></li>
           </ul>
         </div>
-        
       </div>
 
     </main>
 
   </section>
 
-  <!-- SECTION 5 -->
+  <!-------------------------------------------------  SECTION 5 ----------------------------------------------- -->
 
   <section id="sec5" class="sec5 secSide">
 
@@ -362,7 +316,7 @@
 
   </section>
 
-  <!-- _________SECTION 6______________-->
+  <!------------------------------------------------- SECTION 6 ------------------------------------------------->
 
   <section class="sec6"></section>
 
