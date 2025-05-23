@@ -38,6 +38,92 @@ window.onscroll = () => {
 
 // _________________________________________________________SECTION 3 GALLERY__________________________________________________
 
+// const imageCategories = {
+//   fish: [
+//     "foto/ryby/1.jpg",
+//     "foto/ryby/2.jpg",
+//     "foto/ryby/3.jpg",
+//     "foto/ryby/4.jpg",
+//     "foto/ryby/5.jpg",
+//     "foto/ryby/6.jpg"
+//   ],
+//   archery: [
+//     "foto/archery/1.jpg",
+//     "foto/archery/2.png",
+//     "foto/archery/3.jpg",
+//     "foto/archery/4.jpg",
+//     "foto/archery/5.jpeg"
+//   ],
+//   drone: [
+//     "foto/drone/1.png",
+//     "foto/drone/2.png",
+//     "foto/drone/3.png",
+//     "foto/drone/4.png",
+//     "foto/drone/5.png"
+//   ]
+// };
+
+// let currentIndex = 0;
+// let currentCategory = 'fish';
+
+// function openGallery(category) {
+//   currentCategory = category;
+//   currentIndex = 0;
+//   updateGalleryImage();
+//   document.getElementById("fullscreenGallery").style.display = "flex";
+//   document.body.classList.add("no-scroll");
+// }
+
+// function closeGallery() {
+//   document.getElementById("fullscreenGallery").style.display = "none";
+//   document.body.classList.remove("no-scroll");
+// }
+
+// function changeImage(direction) {
+//   const images = imageCategories[currentCategory];
+//   currentIndex = (currentIndex + direction + images.length) % images.length;
+//   updateGalleryImage();
+// }
+
+// function updateGalleryImage() {
+//   const img = document.getElementById("galleryImage");
+//   img.src = imageCategories[currentCategory][currentIndex];
+// }
+
+// // Zatvoriť kliknutím mimo obrázka
+// document.getElementById("fullscreenGallery").addEventListener("click", function (e) {
+//   if (e.target.id === "fullscreenGallery") {
+//     closeGallery();
+//   }
+// });
+
+// // ____SWIPE OVLADANIE_________
+
+// let touchStartX = 0;
+// let touchEndX = 0;
+
+// const gallery = document.getElementById("fullscreenGallery");
+
+// gallery.addEventListener("touchstart", function (e) {
+//   touchStartX = e.changedTouches[0].screenX;
+// }, false);
+
+// gallery.addEventListener("touchend", function (e) {
+//   touchEndX = e.changedTouches[0].screenX;
+//   handleGesture();
+// }, false);
+
+// function handleGesture() {
+//   const swipeThreshold = 50; // minimálny pohyb v pixeloch
+//   if (touchEndX < touchStartX - swipeThreshold) {
+//     changeImage(1); // swipe left -> ďalší obrázok
+//   }
+//   if (touchEndX > touchStartX + swipeThreshold) {
+//     changeImage(-1); // swipe right -> predchádzajúci obrázok
+//   }
+// }
+
+
 const imageCategories = {
   fish: [
     "foto/ryby/1.jpg",
@@ -72,11 +158,19 @@ function openGallery(category) {
   updateGalleryImage();
   document.getElementById("fullscreenGallery").style.display = "flex";
   document.body.classList.add("no-scroll");
+
+  // Pridáme stav do histórie pre späť tlačidlo
+  history.pushState({ galleryOpen: true }, "");
 }
 
 function closeGallery() {
   document.getElementById("fullscreenGallery").style.display = "none";
   document.body.classList.remove("no-scroll");
+
+  // Odstránime stav z histórie ak bol pridaný
+  if (history.state && history.state.galleryOpen) {
+    history.back();
+  }
 }
 
 function changeImage(direction) {
@@ -90,96 +184,48 @@ function updateGalleryImage() {
   img.src = imageCategories[currentCategory][currentIndex];
 }
 
-// Zatvoriť kliknutím mimo obrázka
+// Zatvorenie kliknutím mimo obrázka
 document.getElementById("fullscreenGallery").addEventListener("click", function (e) {
   if (e.target.id === "fullscreenGallery") {
     closeGallery();
   }
 });
 
-// ____SWIPE OVLADANIE_________
-
+// Swipe podpora pre mobily
 let touchStartX = 0;
 let touchEndX = 0;
 
-const fullscreenGallery = document.getElementById("fullscreenGallery"); // alebo tvoj wrapper
+const gallery = document.getElementById("fullscreenGallery");
 
-fullscreenGallery.addEventListener("touchstart", function (e) {
-  touchStartX = e.touches[0].clientX;
+gallery.addEventListener("touchstart", function (e) {
+  touchStartX = e.changedTouches[0].screenX;
 });
 
-fullscreenGallery.addEventListener("touchend", function (e) {
-  touchEndX = e.changedTouches[0].clientX;
-  handleSwipeGesture();
+gallery.addEventListener("touchend", function (e) {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
 });
 
-function handleSwipeGesture() {
-  const swipeThreshold = 50; // Minimálny rozdiel pre rozpoznanie swipe
+function handleSwipe() {
+  const deltaX = touchEndX - touchStartX;
+  const swipeThreshold = 50; // px
 
-  if (touchEndX < touchStartX - swipeThreshold) {
-    // Swipe doľava – ďalší obrázok
-    showNextImage();
-  } else if (touchEndX > touchStartX + swipeThreshold) {
-    // Swipe doprava – predchádzajúci obrázok
-    showPrevImage();
+  if (Math.abs(deltaX) > swipeThreshold) {
+    if (deltaX < 0) {
+      changeImage(1);  // Swipe left → next
+    } else {
+      changeImage(-1); // Swipe right → previous
+    }
   }
 }
 
-// // FISHING
-// let fishButton = document.querySelector('#fishButton');
-// let closer1 = document.querySelector('#closer1');
-// let galleryFish = document.querySelector("#wrapperFish");
+// Podpora systémového tlačidla Späť
+window.addEventListener("popstate", function () {
+  if (document.getElementById("fullscreenGallery").style.display === "flex") {
+    closeGallery();
+  }
+});
 
-// const galleryEventF = (gallery, close, open) => {
-//     galleryFish.style.display = gallery;
-//     closer.style.display = close;
-//     fishButton.style.display = open;
-// };
-// fishButton.addEventListener('click', () => galleryEventF("block", "block", "none"));
-// closer1.addEventListener('click', () => galleryEventF("none", "none", "block"));
-
-
-
-// // ARCHERY
-// let archeryButton = document.querySelector('#archeryButton');
-// let closer2 = document.querySelector('#closer2');
-// let galleryArchery = document.querySelector("#wrapperArchery");
-
-// const galleryEventA = (gallery,close, open) => {
-//     galleryArchery.style.display = gallery;
-//     closer.style.display = close;
-//     archeryButton.style.display = open;
-// };
-
-// archeryButton.addEventListener('click', () => galleryEventA("block", "block", "none"));
-// closer2.addEventListener('click', () => galleryEventA("none", "none", "block"));
-
-
-
-// // DRONE
-// let droneButton = document.querySelector('#droneButton');
-// let closer3 = document.querySelector('#closer3');
-// let galleryDrone = document.querySelector("#wrapperDrone");
-
-// const galleryEventD = (gallery,close, open) => {
-//     galleryDrone.style.display = gallery;
-//     closer.style.display = close;
-//     droneButton.style.display = open;
-// };
-
-// droneButton.addEventListener('click', () => galleryEventD("block", "block", "none"));
-// closer3.addEventListener('click', () => galleryEventD("none", "none", "block"));
-
-
-// Body stop scroll when gallery open
-// function openGallery(id) {
-//     document.getElementById(id).style.display = "flex";
-//     document.body.classList.add("no-scroll");
-// }
-// function closeGallery(id) {
-//     document.getElementById(id).style.display = "none";
-//     document.body.classList.remove("no-scroll");
-// }
 
 // SEC 3 scrollbar from middle
 document.addEventListener('DOMContentLoaded', function () {
