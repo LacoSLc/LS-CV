@@ -3,8 +3,11 @@
     width: min(100%, 3000px);
     min-height: 100vh;
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 100px;
 }
 
 @font-face {
@@ -18,10 +21,10 @@
     font-weight: bold;
     text-align: center;
     width: calc(100% - 10px);
-    display: block;
-    place-content: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    bottom: 30px;
 }
 
 .skillsLvl{
@@ -43,9 +46,8 @@
 
 .sec4 main{
     width: clamp(350px, 80vw, 2000px);
-    height: clamp(400px, 10vw, 1200px);
-    margin: 0 auto;
-    margin-top: 40px;
+    height: 60vh;
+    max-height: 700px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -145,19 +147,27 @@
 
 }
 
+
+
 @media screen and (max-width:951.2px){
     .sec4{
         padding-top: 0px;
+        gap: 0px;
     }
     .sec4 main{
         display: grid;
+        gap: 5vh;
+        height: 80%;
+    }
+    .sec4 .p1{
+    }
+    #h2wrapp{
         height: 100%;
-        gap: 30px;
     }
 
-    .sec4 .p1{
+    /* .sec4 .p1{
         bottom: -40px;
-    }
+    } */
 
     .percenta{
         width: 79vw;
@@ -167,8 +177,8 @@
         width: 210px;
     }
      
-    #h2wrapp{
+    /* #h2wrapp{
         margin-top: 20px;
-    }
+    } */
 
 }

@@ -11,46 +11,6 @@
 
 /* HEADER */
 
-/* @font-face {
-    font-family: 'Monoton';
-    src: url(fonts/Monoton-Regular.ttf) format("opentype");
-}
-
-.neon{
-    color: rgb(20, 186, 172);
-    letter-spacing: 5px;
-    text-shadow:1px 0px 4px rgb(0, 78, 57),
-                1px 0px 4px rgb(18, 170, 130), 
-                1px 0px 4px rgb(31, 182, 142), 
-                1px 0px 4px rgb(37, 203, 159), 
-                0px 0px 15px rgb(58, 216, 174), 
-                0px 0px 15px rgb(61, 212, 172), 
-                0px 0px 125px rgb(86, 228, 191), 
-                0px 0vw 150px rgb(126, 219, 194);
-    font-family: 'Monoton';
-    font-size: clamp(55px, 6vw, 120px) ;
-    font-weight: 200;
-    display:block;
-    background: transparent;
-}
-
-.flicker-slow{
-  animation: flicker 3s linear infinite;
-}
-
-.flicker-fast{
-  animation: flicker 1s linear infinite;
-}
-
-@keyframes flicker {
-    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-      opacity: .99;
-    }
-    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-     opacity: 0.4;
-    }
-} */
-
 .sec3 .p2{
     color: ghostwhite;
     font-size: clamp(20px ,2.5vw, 75px);
@@ -64,7 +24,6 @@
     justify-content: center;
     z-index: 3;
     position: relative;
-    top: 20px;
 }
 
 .hobbies{

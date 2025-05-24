@@ -404,8 +404,8 @@
 
     .sec1 main{ 
         align-items: center;
-        justify-content: space-between;
-        gap: 50px;
+        justify-content: space-evenly;
+        height: 100%;
     }
 
     .adresa, .mail, .tel{
