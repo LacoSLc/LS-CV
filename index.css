@@ -10,6 +10,13 @@ body{
     background-color: rgb(14, 14, 16);
  }
 
+hr{
+    border: 0;
+    height: 0;
+    border-top: 0.1px solid rgb(0, 0, 0);
+    border-bottom: 0.1px solid rgb(69, 69, 69);
+}
+
 .sideNavi{
     position: fixed;
     width: 50px;

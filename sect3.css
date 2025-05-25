@@ -24,6 +24,7 @@
     justify-content: center;
     z-index: 3;
     position: relative;
+    top: 30px;
 }
 
 .hobbies{
@@ -276,6 +277,10 @@
     }
     .box:hover{
         width: 320px;
+    }
+    .sec3 .p2{
+        position: relative;
+        top: 40px;
     }
 }
 
