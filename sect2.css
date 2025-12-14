@@ -6,7 +6,6 @@
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
-    margin-bottom: 70px;
 }
 
 .container2{
@@ -118,4 +117,5 @@
         height: 200px;
     }
 }
+
 
